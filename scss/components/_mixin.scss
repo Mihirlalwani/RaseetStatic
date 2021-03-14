@@ -1,0 +1,126 @@
+// Mixin
+
+// Golden Ratio ______________________________
+	@mixin goldenRectangle($height: 400px){
+		$goldenVal: $height / 1.618;
+		width: $goldenVal + $height;
+		min-width: $goldenVal + $height;
+		height: $height;
+	}
+	@mixin goldenRectangleV($width: 400px){
+		$goldenVal: $width / 1.618;
+		height: $goldenVal + $width;
+		width: $width;
+		min-width: $width;
+	}
+	@mixin goldenBoxes(){
+		$val_A: 100% / 1.618;
+		$val_B: 100% - $val_A;
+
+		._box_A {width: $val_A;}
+		._box_B {width: $val_B;}
+	}
+	@mixin goldenBoxes_V(){
+		$val_A: 100% / 1.618;
+		$val_B: 100% - $val_A;
+
+		._box_A {height: $val_A;}
+		._box_B {height: $val_B;}
+	}
+
+// Display Flex ______________________________
+	@mixin flex($flex: flex) {
+		display: -webkit-$flex;
+		display: -moz-$flex;
+		display: -ms-$flex;
+		display: -o-$flex;
+		display: $flex;
+	}
+	@mixin flexCenter($_H_center: center, $_V_center: center, $content: center){
+		justify-content: $_H_center;
+		align-items: $_V_center;
+		align-content: $content;
+	}
+
+	@mixin borderRadius($radius: 20px){
+		border-radius: $radius;
+	}
+
+// Fonts ______________________________________
+	@mixin fontAwesome(){
+		font-family: 'Font Awesome 5 Free';
+		font-weight: 900;
+	}
+
+
+// noScroll ___________________________________
+	@mixin noScroll {overflow-x: hidden; overflow-y: hidden; }
+
+// Absolute Sections __________________________
+	@mixin absAfter() {
+		position: absolute;
+		content: '';
+	}
+	@mixin absCenter($bgColor: rgba(0,0,0,0.2)){
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: $bgColor;
+	}
+
+// ::hover/::active _____________________________
+
+	@mixin afterHover($bgColor: $green, $_color: $white, $bdrClr: transparent) {
+		background-color: $bgColor;
+		color: $_color;
+		border-color: $bdrClr;
+	}
+
+
+// Others _____________________________
+	
+	@mixin objectFit($objW: 100%, $objH: 100%, $objT: cover){
+		position: relative;
+		overflow: hidden;
+		img {
+			object-fit: $objT;
+			width: $objW;
+			height: $objH;			
+		}
+	}
+
+// Paragraph ___________________________________
+	@mixin contentArea($TxtClr: $black, $HdngClr: $green, $p_fSize: 15px, $pLH: 24px){
+		h1 {
+			font-size: 36px;
+			line-height: 50px;
+			margin-bottom: 30px;
+			color: $HdngClr;
+			font-family: $G_B;
+		}
+		h2 {
+			font-family: $G_B;
+			font-size: 30px;
+			line-height: 40px;
+			margin-bottom: 30px;
+			color: $HdngClr;
+		}
+		h3 {
+			font-family: $G_B;
+			font-size: 24px;
+			line-height: 28px;
+			margin-bottom: 20px;
+			color: $HdngClr;
+		}
+
+		p {
+			color: $TxtClr;
+			font-size: $p_fSize;
+			line-height: $pLH;
+			font-weight: 300;
+			margin-bottom: 20px;
+			
+			&:last-child {margin-bottom: 0; }
+		}
+	}

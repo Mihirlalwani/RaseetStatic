@@ -1,0 +1,96 @@
+//  ||	  ===         ==       =        =         =       ==       =      =      = = =          ==       = = = = =       ==       || //
+//  ||	==   ==      =  =      =        = =     = =      =  =      = =    =      =     =       =  =             =       =  =      || //
+//  ||  ==          =    =     =        =  =   =  =     =    =     =  =   =      =     =      =    =          =        =    =     || //
+//  ||     ==      =  ==  =    =        =   = =   =    =  ==  =    =   =  =      = == =      =  ==  =       =         =  ==  =    || //
+//  ||  ==   ==   =        =   =        =    =    =   =        =   =    = =      =     =    =        =    =          =        =   || //
+//  ||    ===    =          =  = = = =  =         =  =          =  =      =      =      =  =          =  = = = = =  =          =  || //
+//  -------------------------------------------------------------------------------------------------------------------------------- //
+//  Front-end coded by: Salman Raza (Behance: http://be.net/salraza1993, website: www.salmanrza.in);
+//  -------------------------------------------------------------------------------------------------------------------------------- //
+
+@import 'bootstrap.css';
+@import 'slick.css';
+@import 'animate.css';
+@import 'fonts.css';
+@import 'owl.carousel.css';
+@import 'fontawesome/css/fontawesome-all.min.css';
+
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	
+	/* Social Media color */
+	--faceboook: 	#3b5998;
+	--instagram: 	#ff0084;
+	--twitter: 		#55acee;
+	--youtube: 		#b31217;
+	--linkedIn: 	#0077b5;
+	--google_plus: 	#dc4e41;
+	--pinterest: 	#bd081c;
+	--whatsapp: 	#25D366;
+
+	/* colors */
+	--font_color: #545454;
+	--white: #fff;
+
+	/* Animation */
+	--transition: all 0.3s ease-in;	
+
+	/* font name */
+	--roboto: 'Roboto', sans-serif;
+}
+
+body {
+	font-size: 14px;
+	line-height: 26px;
+	color: var(--grey_color);
+	font-family: var(--roboto);
+}
+
+body.noScroll {overflow-x: hidden; overflow-y: hidden; }
+body::-webkit-scrollbar {width: 7px; height: 2px;}
+body::-webkit-scrollbar-track {background: transparent;}
+body::-webkit-scrollbar-thumb {background: #333;border-radius: 50px;}
+
+.rtl {direction: rtl;}
+.ltr {direction: ltr;}
+
+.left {float: left;}
+.right {float: right;}
+.d_f {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+a {color: #545454; text-decoration: none; }
+ul {list-style: none;}
+img { border: 0;display: block;}
+input:focus, 
+button:focus, 
+img:focus, .slick-slide:focus, 
+a:focus, textarea:focus {outline: none;}
+.slick-dots > li > button {display: none;}
+
+h1 {font-size: 36px; line-height: 36px;}
+h2 {font-size: 30px;}
+h3 {font-size: 24px;}
+h4 {font-size: 20px;}
+h5 {font-size: 18px;}
+h6 {font-size: 16px;}
+section, footer, header {
+	width: 100%;
+	position: relative;
+	float: left;
+	z-index: 0;
+}
+
+/* ----------------[ header ]---------------- */
+
+/* ----------------[ // header ]---------------- */
