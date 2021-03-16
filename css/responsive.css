@@ -1,5 +1,5 @@
 /* Common Laptop View */
-@media (min-width: 800px) and (max-width: 1000px) {
+@media (min-width: 1025px) and (max-width: 1366px) {
   .topSldrSec {
     padding-top: 120px; }
     .topSldrSec .topSldrCont ._cntntBox, .topSldrSec .topSldrCont ._imgBox {
@@ -18,6 +18,8 @@
         border-radius: 5px; }
       .whtsappIntpCont ._intptFrmCnt ._intptFrm button {
         height: 55px; } }
+
+        
 /* Tablet Pro View */
 @media (max-width: 1024px) {
   .topSldrSec {
@@ -43,6 +45,8 @@
     .whtsappIntpCont ._intptFrmCnt ._intptFrm button {
       height: 50px;
       margin-top: 20px; } }
+
+
 /* Tablet View */
 @media (max-width: 1023px) and (min-width: 992px) {
   header .container {
@@ -91,12 +95,15 @@
       .whtsappIntpCont ._intptFrmCnt ._intptFrm button {
         height: 50px;
         margin-top: 20px; } }
+
+
 @media (max-width: 1023px) and (min-width: 768px) {
   header .subHdr {
     height: 65px;
     align-items: center; }
     header .subHdr ._rightArea .mainNav .menu {
       display: none; }
+    
 
   .whySec .srvcBxCnt ._whyBoxCont {
     max-width: 45%; }
@@ -106,6 +113,7 @@
 
   .ftrSMSec .whtsappIntpCont ._intptFrmCnt ._intptFrm {
     flex-direction: column; } }
+
 @media (max-width: 1023px) and (min-width: 320px) {
   header .subHdr ._rightArea .hmbrgerMenu {
     display: block; }
@@ -125,6 +133,8 @@
       header .subHdr ._rightArea .mainNav .menu li a {
         height: 45px;
         white-space: nowrap; } }
+
+
 @media (max-width: 767px) and (min-width: 320px) {
   header .subHdr ._logoBox {
     min-width: auto; }

@@ -17,7 +17,8 @@ body {
   font-size: 16px;
   line-height: 26px;
   color: #545454;
-  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: 'Nunito Sans', sans-serif;
+}
 
 body.noScroll {
   overflow-x: hidden;
@@ -54,7 +55,7 @@ body::-webkit-scrollbar-thumb {
   display: flex; }
 
 a {
-  color: #545454;
+  color: #2d2c2c;
   text-decoration: none; }
 
 ul {
@@ -177,18 +178,22 @@ header {
   header._fixed {
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05); }
   header .subHdr {
-    justify-content: space-between; }
+    justify-content: space-between;
+    margin-top: 15px; }
     header .subHdr > div {
       position: relative; }
       header .subHdr > div._leftArea {
         align-items: center; }
     header .subHdr ._logoBox {
       position: relative;
-      min-width: 300px;
-      height: 50px; }
-      header .subHdr ._logoBox h1 {
-        font-size: 50px;
-        line-height: 50px; }
+      min-width: 100px;
+      height: 50px;
+      margin-bottom:15px ;
+      }
+      header .subHdr ._logoBox img {
+       height: 50px;
+       padding-bottom: 0px;
+        }
     header .subHdr ._rightArea {
       position: relative;
       flex-direction: column; }
@@ -242,10 +247,11 @@ header {
             header .subHdr ._rightArea .mainNav .menu li a {
               display: flex;
               align-items: center;
+              font-family: 'Nunito Sans', sans-serif;
               font-size: 17px;
               height: 65px;
-              letter-spacing: 1px;
-              text-transform: uppercase;
+              letter-spacing: 0px;
+              margin-top: 0px;
               transition: all 0.3s ease-in; }
               header .subHdr ._rightArea .mainNav .menu li a:hover, header .subHdr ._rightArea .mainNav .menu li a.active {
                 box-shadow: inset 0 -5px 0 #E76F51;
@@ -289,7 +295,7 @@ header {
             top: 15px; }
 
 .topSldrSec {
-  background-color: rgba(7, 137, 48, 0.1);
+  background-color: #225E77;
   padding-top: 120px;
   padding-bottom: 70px; }
   .topSldrSec .topSldrCont {
@@ -356,7 +362,7 @@ header {
       width: 100%; }
       .whtsappIntpCont ._intptFrmCnt ._intptFrm ._inputBox {
         position: relative;
-        width: 50%;
+        width: 70%;
         border-radius: 5px;
         overflow: hidden;
         background-color: white;
@@ -388,7 +394,7 @@ header {
           border: 0;
           background-color: transparent; }
       .whtsappIntpCont ._intptFrmCnt ._intptFrm button {
-        min-width: 150px;
+        min-width: 100px;
         font-size: 18px;
         font-weight: 500;
         text-transform: uppercase;
@@ -398,7 +404,7 @@ header {
         border: 0;
         letter-spacing: 2px;
         cursor: pointer;
-        width: 20%;
+        width: 30%;
         transition: all 0.3s ease-in; }
         .whtsappIntpCont ._intptFrmCnt ._intptFrm button:hover {
           background: #d84824;
@@ -445,7 +451,8 @@ header {
       flex-direction: column;
       text-align: center;
       align-items: center;
-      padding: 0 10px; }
+      padding: 0 10px;
+      }
       .whySec .srvcBxCnt ._whyBoxCont ._icon {
         position: relative;
         width: 100%;
@@ -461,32 +468,47 @@ header {
         font-size: 22px; }
 
 .hwitWrkSec {
-  padding: 100px 0 0; }
+  padding: 40px 0 0; }
   .hwitWrkSec ._imgCont {
     position: relative;
     border-radius: 10px 10px 0 0;
     overflow: hidden; }
-    .hwitWrkSec ._imgCont img {
-      width: 100%; }
-  .hwitWrkSec ._cntnt {
+    .hwitWrkSec ._imgCont.web img {
+      width: 75%;
+      margin-left: 150px; 
+      justify-content: center;}
+      .hwitWrkSec ._imgCont.mobile img {
+        width: 95%;
+        margin-left: 0px;
+        margin-right: 10%; 
+        justify-content: center;
+        float: right;}
+  .hwitWrkSec ._cntnt.webCont {
     padding-left: 10%;
-    padding-top: 10%; }
+    padding-top: 30%;
+    margin-left: 30%; }
+    .hwitWrkSec ._cntnt.mobileCont {
+      padding-left: 10%;
+      padding-top: 40%;
+      margin-left: 30%; }
     .hwitWrkSec ._cntnt ._hdngBox {
       position: relative;
       text-align: left; }
       .hwitWrkSec ._cntnt ._hdngBox h1 {
-        font-size: 36px; }
+        font-size: 25px;
+        padding-right: 50px; 
+      }
         .hwitWrkSec ._cntnt ._hdngBox h1:after {
           position: absolute;
           content: '';
           bottom: -30px;
           left: 0;
-          height: 8px;
-          width: 150px;
+          height: 6px;
+          width: 62px;
           border-radius: 10px;
-          background: #F4D70D; }
+          background: #E76F51; }
   .hwitWrkSec._greenColor {
-    background-color: rgba(7, 137, 48, 0.1); }
+    background-color: #e5e5e5; }
   .hwitWrkSec._intrfaceSec ._cntnt, .hwitWrkSec._dashboardSec ._cntnt {
     padding-top: 0;
     padding-left: 0;
@@ -504,23 +526,23 @@ header {
     position: relative;
     list-style: none;
     margin: 0;
-    max-width: 850px;
+    max-width: 1200px;
     margin: 0 auto; }
     .faqSec .faqsCntnt > li {
       border-bottom: 1px solid #eee;
       padding-left: 0;
       margin-bottom: 0; }
       .faqSec .faqsCntnt > li:first-child {
-        border-top: 1px solid #eee; }
+        border-top: 0px solid #eee; }
       .faqSec .faqsCntnt > li.active {
-        background-color: rgba(7, 137, 48, 0.1);
-        border-bottom: 1px solid #ccc; }
+        background-color: white;
+        border-bottom: 0px solid #ccc; }
         .faqSec .faqsCntnt > li.active ._hdng {
           padding: 20px; }
           .faqSec .faqsCntnt > li.active ._hdng:hover {
-            background-color: rgba(7, 137, 48, 0.1); }
-          .faqSec .faqsCntnt > li.active ._hdng:after {
-            content: '\f068'; }
+            background-color: #f5f5f5; }
+          .faqSec .faqsCntnt  > li.active ._hdng::before {
+            content: '\f106'; }
       .faqSec .faqsCntnt > li ._hdng {
         padding: 20px;
         display: -webkit- flex;
@@ -528,7 +550,6 @@ header {
         display: -ms- flex;
         display: -o- flex;
         display: flex;
-        justify-content: space-between;
         cursor: pointer;
         transition: all 0.3s ease-in;
         color: #333; }
@@ -536,14 +557,16 @@ header {
           font-size: 18px;
           font-weight: 700;
           max-width: 80%;
-          margin-bottom: 0; }
+          margin-bottom: 0; 
+          margin-left: 50px;}
         .faqSec .faqsCntnt > li ._hdng:hover {
           background-color: #f5f5f5; }
-        .faqSec .faqsCntnt > li ._hdng:after {
-          content: '\f067';
+        .faqSec .faqsCntnt > li ._hdng::before {
+          content: '\f107';
           font-size: 18px;
           font-family: 'Font Awesome 5 Free';
-          font-weight: 900; }
+          font-weight: 900;
+          color: #E76F51; }
       .faqSec .faqsCntnt > li ._cntnt {
         border-radius: 5px;
         padding: 15px 20px 5px;
@@ -556,7 +579,7 @@ header {
           margin-bottom: 0; }
 
 .ftrSMSec {
-  padding: 50px 0; }
+  padding: 0px 0; }
   .ftrSMSec ._cntntBox {
     position: relative;
     width: 100%;
@@ -565,7 +588,7 @@ header {
     padding-top: 40px;
     background-color: #f7f7f7; }
     .ftrSMSec ._cntntBox._joinCntnt {
-      background-color: #F4D70D;
+      background-color: #225E77;
       padding: 50px; }
     .ftrSMSec ._cntntBox._anyQstnCont {
       padding-left: 10%; }
@@ -590,7 +613,7 @@ header {
           .ftrSMSec ._cntntBox._anyQstnCont ._sm li a p {
             font-size: 18px; }
           .ftrSMSec ._cntntBox._anyQstnCont ._sm li a:hover {
-            color: #078930;
+            color: #E76F51;
             background-color: rgba(7, 137, 48, 0.1); }
       .ftrSMSec ._cntntBox._anyQstnCont h5 {
         font-size: 18px; }
@@ -599,47 +622,60 @@ header {
           margin-left: 5px;
           display: inline-block; }
           .ftrSMSec ._cntntBox._anyQstnCont h5 a:hover {
-            color: #078930;
+            color: #E76F51;
             text-decoration: underline; }
-    .ftrSMSec ._cntntBox h1 {
+            .ftrSMSec ._anyQstnCont h1 {
+              margin-bottom: 30px;
+              color: #225E77;
+               }
+    .ftrSMSec ._cntntBox._joinCntnt h1 {
       margin-bottom: 30px;
-      color: #078930;
-      font-family: "PT Serif", serif; }
+      color: white;
+       }
+       
+
+       
     .ftrSMSec ._cntntBox .whtsappIntpCont {
       margin-bottom: 20px; }
       .ftrSMSec ._cntntBox .whtsappIntpCont ._intptFrmCnt ._intptFrm ._inputBox {
         background-color: #fff; }
       .ftrSMSec ._cntntBox .whtsappIntpCont ._intptFrmCnt ._intptFrm button:hover {
         background-color: #fff;
-        color: #078930; }
+        color: white; }
 
 footer {
   background-color: #E5E5E5;
-  padding: 80px 0 40px; }
+  padding: 12px 0 2px; }
   footer .subFooter {
     width: 100%;
-    max-width: 1000px;
-    margin: 0 auto; }
+    max-width: 1260px;
+    margin: 0; }
     footer .subFooter ._linkBx {
       position: relative;
       width: 100%;
       flex: 1; }
       footer .subFooter ._linkBx h3 {
         margin-bottom: 25px; }
-      footer .subFooter ._linkBx ._lnk {
+      footer .subFooter ._linkBx .support {
         position: relative;
-        width: 100%; }
+        width: 100%;
+        margin-left: 150px; }
         footer .subFooter ._linkBx ._lnk li {
           width: 100%; }
           footer .subFooter ._linkBx ._lnk li a {
             display: block;
             font-size: 18px;
             margin-bottom: 10px; }
-            footer .subFooter ._linkBx ._lnk li a:hover {
-              color: #078930;
+            footer .subFooter ._linkBx ._lnk p a:hover {
+              color: #E76F51;
               text-decoration: underline; }
+              footer .subFooter ._linkBx ._lnk li a:hover {
+                color: #E76F51;
+                text-decoration: underline; }
         footer .subFooter ._linkBx ._lnk._ftrSM {
-          margin-top: -10px; }
+          margin-top: -10px; 
+          margin-left: 200px;
+        }
           footer .subFooter ._linkBx ._lnk._ftrSM li {
             width: 50px; }
             footer .subFooter ._linkBx ._lnk._ftrSM li a {
@@ -655,7 +691,7 @@ footer {
               transition: all 0.3s ease-in;
               border-radius: 6px; }
               footer .subFooter ._linkBx ._lnk._ftrSM li a:hover {
-                background-color: #333;
-                color: #fff; }
+                background-color: #E76F51;
+                color: rgb(226, 226, 226); }
 
 /*# sourceMappingURL=style.css.map */
