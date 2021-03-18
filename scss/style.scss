@@ -34,6 +34,7 @@ body {
 	line-height: 26px;
 	color: $grey;
 	font-family: $font;
+	width: auto;
 }
 
 body.noScroll {overflow-x: hidden; overflow-y: hidden; }
@@ -549,7 +550,7 @@ section, footer, header {
 		position: relative;
 		list-style: none;
 		margin: 0;
-		max-width: 850px;
+		max-width: 1260px;
 		margin: 0 auto;
 
 		> li {
@@ -605,7 +606,7 @@ section, footer, header {
 }
 
 .ftrSMSec {
-	padding: 50px 0;
+	padding: 0;
 
 	._cntntBox {
 		position: relative;
@@ -613,11 +614,11 @@ section, footer, header {
 		min-height: 350px;
 		flex-direction: column;
 		padding-top: 40px;
-		background-color: #f7f7f7;
+		
 
 		&._joinCntnt {
 			background-color: #F4D70D;
-			padding: 50px;
+			padding: 0px;
 		}
 		&._anyQstnCont {
 			padding-left: 10%;

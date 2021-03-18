@@ -18,6 +18,7 @@ body {
   line-height: 26px;
   color: #545454;
   font-family: 'Nunito Sans', sans-serif;
+  width: fit-content;
 }
 
 body.noScroll {
@@ -186,7 +187,7 @@ header {
         align-items: center; }
     header .subHdr ._logoBox {
       position: relative;
-      min-width: 100px;
+      min-width: 50px;
       height: 50px;
       margin-bottom:15px ;
       }
@@ -435,6 +436,7 @@ header {
 .whySec {
   padding: 40px 0;
   font-family: 'Nunito Sans', sans-serif; 
+  background-color: rgba(218,218,218,0.2);
  }
   .whySec .srvcBxCnt {
     position: relative;
@@ -443,16 +445,21 @@ header {
     align-items: center; }
     .whySec .srvcBxCnt ._whyBoxCont {
       position: relative;
-      width: 100%;
-      min-height: 230px;
-      margin-bottom: 30px;
-      max-width: 30%;
-      margin: 0 15px;
+      width: 80%;
+      height: 350px;
+      margin-bottom: 50px;
+      width: 320px;
+      margin: 35px;
       flex-direction: column;
       text-align: center;
       align-items: center;
-      padding: 0 10px;
-      }
+      padding: 30px;
+      padding-top: 60px;
+      /* border: 1px solid #e7927d; */
+      box-shadow:0 0 10px #dadada;
+      background-color: white;
+      border-radius: 5%;
+       }
       .whySec .srvcBxCnt ._whyBoxCont ._icon {
         position: relative;
         width: 100%;
@@ -508,7 +515,7 @@ header {
           border-radius: 10px;
           background: #E76F51; }
   .hwitWrkSec._greenColor {
-    background-color: #e5e5e5; }
+    background-color: white; }
   .hwitWrkSec._intrfaceSec ._cntnt, .hwitWrkSec._dashboardSec ._cntnt {
     padding-top: 0;
     padding-left: 0;
@@ -521,7 +528,9 @@ header {
     padding-bottom: 80px; }
 
 .faqSec {
-  padding: 50px 0; }
+  padding: 50px 0;
+  background-color: rgba(218,218,218,0.2);
+   }
   .faqSec .faqsCntnt {
     position: relative;
     list-style: none;
@@ -531,16 +540,19 @@ header {
     .faqSec .faqsCntnt > li {
       border-bottom: 1px solid #eee;
       padding-left: 0;
-      margin-bottom: 0; }
+      margin-bottom: 0;
+      border-radius: 5px; }
       .faqSec .faqsCntnt > li:first-child {
         border-top: 0px solid #eee; }
       .faqSec .faqsCntnt > li.active {
-        background-color: white;
-        border-bottom: 0px solid #ccc; }
+        background-color: #ddd;
+        border-bottom: 0px solid #ccc;
+         }
         .faqSec .faqsCntnt > li.active ._hdng {
-          padding: 20px; }
+          padding: 20px; 
+          background-color: rgba(218,218,218,0.2);}
           .faqSec .faqsCntnt > li.active ._hdng:hover {
-            background-color: #f5f5f5; }
+            background-color: #ccc; }
           .faqSec .faqsCntnt  > li.active ._hdng::before {
             content: '\f106'; }
       .faqSec .faqsCntnt > li ._hdng {
@@ -560,7 +572,7 @@ header {
           margin-bottom: 0; 
           margin-left: 50px;}
         .faqSec .faqsCntnt > li ._hdng:hover {
-          background-color: #f5f5f5; }
+          background-color: #ddd;}
         .faqSec .faqsCntnt > li ._hdng::before {
           content: '\f107';
           font-size: 18px;
@@ -579,7 +591,8 @@ header {
           margin-bottom: 0; }
 
 .ftrSMSec {
-  padding: 0px 0; }
+  padding: 0; 
+  }
   .ftrSMSec ._cntntBox {
     position: relative;
     width: 100%;
@@ -589,9 +602,11 @@ header {
     background-color: #f7f7f7; }
     .ftrSMSec ._cntntBox._joinCntnt {
       background-color: #225E77;
-      padding: 50px; }
+      padding: 50px; 
+     }
     .ftrSMSec ._cntntBox._anyQstnCont {
-      padding-left: 10%; }
+      padding-left: 10%;
+      background-color: white; }
       .ftrSMSec ._cntntBox._anyQstnCont h1 {
         margin-bottom: 20px; }
       .ftrSMSec ._cntntBox._anyQstnCont > p {
@@ -614,7 +629,7 @@ header {
             font-size: 18px; }
           .ftrSMSec ._cntntBox._anyQstnCont ._sm li a:hover {
             color: #E76F51;
-            background-color: rgba(7, 137, 48, 0.1); }
+            background-color: rgba(218,218,218,0.2) }
       .ftrSMSec ._cntntBox._anyQstnCont h5 {
         font-size: 18px; }
         .ftrSMSec ._cntntBox._anyQstnCont h5 a {
@@ -640,7 +655,7 @@ header {
       .ftrSMSec ._cntntBox .whtsappIntpCont ._intptFrmCnt ._intptFrm ._inputBox {
         background-color: #fff; }
       .ftrSMSec ._cntntBox .whtsappIntpCont ._intptFrmCnt ._intptFrm button:hover {
-        background-color: #fff;
+        background-color: #d84824;
         color: white; }
 
 footer {

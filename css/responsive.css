@@ -132,19 +132,22 @@
       margin-right: 0; }
       header .subHdr ._rightArea .mainNav .menu li a {
         height: 45px;
-        white-space: nowrap; } }
+        white-space:normal; } }
 
 
 @media (max-width: 767px) and (min-width: 320px) {
   header .subHdr ._logoBox {
-    min-width: auto; }
-  header .subHdr ._logoBox h1 {
-    font-size: 30px; }
+    min-width: auto; 
+    margin-bottom: 0;}
+  header .subHdr ._logoBox img {
+    height: 30px; 
+    margin-bottom: 0;}
   header .subHdr ._rightArea .mainNav {
     flex-direction: row-reverse; }
   header .subHdr ._rightArea .hmbrgerMenu {
     margin-left: 15px;
-    margin-right: 10px; }
+    margin-right: 10px;
+     }
 
   .topSldrSec {
     padding-top: 65px;
