@@ -12,7 +12,17 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box; }
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
 body {
   font-size: 16px;
   line-height: 26px;
@@ -93,6 +103,9 @@ h5 {
 
 h6 {
   font-size: 16px; }
+html,body{
+  overflow-x:hidden ;
+}
 
 section, footer, header {
   width: 100%;
@@ -195,6 +208,12 @@ header {
        height: 50px;
        padding-bottom: 0px;
         }
+        header .subHdr ._leftArea .menu-left li a {
+          color: #225E77;
+          padding-left: 25px; }
+          header .subHdr ._leftArea .menu-left .business {
+            font-weight: bolder; }
+
     header .subHdr ._rightArea {
       position: relative;
       flex-direction: column; }
@@ -357,7 +376,7 @@ header {
   .whtsappIntpCont ._intptFrmCnt {
     position: relative;
     width: 100%;
-    flex-direction: column; }
+    flex-direction:column; }
     .whtsappIntpCont ._intptFrmCnt ._intptFrm {
       position: relative;
       width: 100%; }
@@ -494,10 +513,11 @@ header {
     padding-left: 10%;
     padding-top: 30%;
     margin-left: 30%; }
-    .hwitWrkSec ._cntnt.mobileCont {
+    .hwitWrkSec._intrfaceSec ._cntnt {
       padding-left: 10%;
-      padding-top: 40%;
-      margin-left: 30%; }
+      
+      margin-left: 30%;
+      margin-top: 40%; }
     .hwitWrkSec ._cntnt ._hdngBox {
       position: relative;
       text-align: left; }
@@ -545,14 +565,16 @@ header {
       .faqSec .faqsCntnt > li:first-child {
         border-top: 0px solid #eee; }
       .faqSec .faqsCntnt > li.active {
-        background-color: #ddd;
-        border-bottom: 0px solid #ccc;
+        color: #E76F51;
+        border-bottom: 1px solid #ccc;
          }
         .faqSec .faqsCntnt > li.active ._hdng {
           padding: 20px; 
-          background-color: rgba(218,218,218,0.2);}
+          color: #E76F51;
+          }
           .faqSec .faqsCntnt > li.active ._hdng:hover {
-            background-color: #ccc; }
+             
+            }
           .faqSec .faqsCntnt  > li.active ._hdng::before {
             content: '\f106'; }
       .faqSec .faqsCntnt > li ._hdng {
@@ -565,6 +587,7 @@ header {
         cursor: pointer;
         transition: all 0.3s ease-in;
         color: #333; }
+        
         .faqSec .faqsCntnt > li ._hdng p {
           font-size: 18px;
           font-weight: 700;
@@ -572,7 +595,7 @@ header {
           margin-bottom: 0; 
           margin-left: 50px;}
         .faqSec .faqsCntnt > li ._hdng:hover {
-          background-color: #ddd;}
+          color: #E76F51;}
         .faqSec .faqsCntnt > li ._hdng::before {
           content: '\f107';
           font-size: 18px;
@@ -580,11 +603,13 @@ header {
           font-weight: 900;
           color: #E76F51; }
       .faqSec .faqsCntnt > li ._cntnt {
-        border-radius: 5px;
+        border-bottom-left-radius:  5px;
+        border-bottom-right-radius:  5px;
         padding: 15px 20px 5px;
-        margin-bottom: 20px;
+        /* margin-bottom: 20px; */
         display: none;
-        color: #222222; }
+        color: #222222;
+        background-color: rgba(218,218,218,0.2); }
         .faqSec .faqsCntnt > li ._cntnt ul {
           padding-left: 20px; }
         .faqSec .faqsCntnt > li ._cntnt p:last-child {
