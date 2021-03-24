@@ -1,3 +1,16 @@
+
+@media (hover :hover){
+  .ftrSMSec ._cntntBox .whtsappIntpCont ._intptFrmCnt ._intptFrm button:hover {
+    background-color: #d84824;
+    color: white; }
+    footer .subFooter ._linkBx ._lnk p a:hover {
+      color: #E76F51;
+      text-decoration: underline; }
+      footer .subFooter ._linkBx ._lnk._ftrSM li a:hover {
+        background-color: #E76F51;
+        color: rgb(226, 226, 226); }
+}
+
 /* Common Laptop View */
 @media (min-width: 1025px) and (max-width: 1366px) {
   .topSldrSec {
@@ -23,6 +36,11 @@
         
 /* Tablet Pro View */
 @media (max-width: 1024px) {
+  header .subHdr ._leftArea .menu-left li a {
+   
+    padding-left: 15px; 
+    font-size: small;
+    margin-bottom: 5%;}
   .topSldrSec {
     padding-top: 85px; }
     .topSldrSec .topSldrCont ._cntntBox {
@@ -30,10 +48,13 @@
       min-height: auto;
       max-height: auto; }
       .topSldrSec .topSldrCont ._cntntBox, .topSldrSec .topSldrCont ._imgBox {
-        padding-top: 50px;
+        padding-top: 0px;
         margin-top: 50px;
         max-height: 450px; 
-        min-width: 500px;}
+        min-width: 500px;
+       }
+
+        
         
         .hwitWrkSec ._imgCont.web img {
           width: 100%;         
@@ -75,8 +96,18 @@
   
     .whtsappIntpCont ._intptFrmCnt ._intptFrm button {
       height: 50px;
-      margin-top: 0px; } }
-
+      margin-top: 0px; } 
+      footer .subFooter ._linkBx ._lnk {
+        width: max-content;
+       }
+       footer .subFooter ._linkBx .support {
+        position: relative;
+        margin-left: 100px;
+    }
+    
+          
+    }
+   
 
 /* Tablet View */
 @media (max-width: 1023px) and (min-width: 992px) {
@@ -126,7 +157,50 @@
       flex-direction: column; }
       .whtsappIntpCont ._intptFrmCnt ._intptFrm button {
         height: 50px;
-        margin-top: 0px; } }
+        margin-top: 0px; }
+        .hwitWrkSec ._imgCont.web img {
+          width: 75%;
+          margin-left: 50px; 
+          margin-top: 50px;
+          justify-content: center;
+          overflow: hidden;}
+          .hwitWrkSec ._imgCont.mobile img {
+            width: 99%;
+            margin-left: 0px;
+            margin-right: 2%;
+            margin-top: 0px; 
+            justify-content: center;
+            float: right;
+            overflow:hidden;}
+      .hwitWrkSec ._cntnt.webCont {
+        width: max-content;
+        display: flex;
+        margin-left: 70px;
+        padding:0 ;
+        padding-top: 10%;
+       }
+       .hwitWrkSec ._cntnt ._hdngBox h1:after {
+        position: absolute;
+        content: '';
+        bottom: -30px;
+        left: 0;
+        height: 6px;
+        width: 62px;
+        margin-left: 120px;
+        border-radius: 10px;
+        background: #E76F51; }
+        .hwitWrkSec ._cntnt.mobileCont {
+          margin-top: 10%;
+          padding: 0%;
+          margin-left: 10%;
+          margin-bottom: -7%; }
+          .hwitWrkSec ._cntnt.mobileCont ._hdngBox h1:after
+        {
+          margin-left: 150px;
+          
+        }
+        
+      }
 
 
 @media (max-width: 1023px) and (min-width: 768px) {
@@ -136,7 +210,9 @@
     header .subHdr ._rightArea .mainNav .menu {
       display: none; }
     
-
+      .topSldrSec .topSldrCont ._cntntBox{
+        padding-top: 0px;
+      }
   .whySec .srvcBxCnt ._whyBoxCont {
     max-width: 45%; }
 
@@ -144,8 +220,30 @@
     font-size: 30px; }
 
   .ftrSMSec .whtsappIntpCont ._intptFrmCnt ._intptFrm {
-    flex-direction: column; } }
-
+    flex-direction: unset; }
+    footer {
+      padding: 50px 0 20px; }
+      footer .subFooter {
+        flex-direction: column; }
+        footer .subFooter ._linkBx ._lnk {
+            margin-left: 200px;
+           }
+           footer .subFooter ._linkBx ._lnk._ftrSM{
+             margin-left: 210px ;
+           }
+           footer .subFooter ._linkBx ._lnk li a{
+            justify-self: center;
+             margin-left: 80px;
+              }
+        footer .subFooter ._linkBx {
+          margin-bottom: 30px;
+           }
+          footer .subFooter ._linkBx:last-child {
+            margin-bottom: 0; }
+  
+  
+  }
+/* Mobile Landscape */
 @media (max-width: 1023px) and (min-width: 320px) {
   header .subHdr ._rightArea .hmbrgerMenu {
     display: block; }
@@ -164,9 +262,39 @@
       margin-right: 0; }
       header .subHdr ._rightArea .mainNav .menu li a {
         height: 45px;
-        white-space:normal; } }
+        white-space:normal; }
+      .topSldrSec .topSldrCont{
+        display: flex;
+        flex-direction: column-reverse;
+      }
+      footer {
+        padding: 20px 0 20px; }
+        footer .subFooter {
+          flex-direction: column; }
+          footer .subFooter ._linkBx ._lnk {
+              margin-left: 190px;
+             }
+             footer .subFooter ._linkBx ._lnk._ftrSM{
+               margin-left: 190px ;
+             }
+             footer .subFooter ._linkBx ._lnk li a{
+              justify-self: center;
+               margin-left: 80px;
+                }
+          footer .subFooter ._linkBx {
+            margin-bottom: 5px;
+             }
+            footer .subFooter ._linkBx:last-child {
+              margin-bottom: 0; }
+    
+    }
 
 
+
+
+    
+
+/* Mobile view */
 @media (max-width: 767px) and (min-width: 320px) {
   header .subHdr ._logoBox {
     min-width: auto; 
@@ -199,26 +327,29 @@
         padding-top: 0;
         padding-bottom: 25px; }
         .topSldrSec .topSldrCont ._cntntBox h1 {
-          font-size: 30px;
+          font-size: 29px;
           line-height: 35px;
           margin-bottom: 15px; }
+          .whtsappIntpCont ._intptFrmCnt ._intptFrm ._inputBox input{
+            font-size: 16px;
+          }
 
   footer {
-    padding: 50px 0 20px; }
+    padding: 20px 0 20px; }
     footer .subFooter {
       flex-direction: column; }
       footer .subFooter ._linkBx ._lnk {
           margin-left: 80px;
          }
          footer .subFooter ._linkBx ._lnk._ftrSM{
-           margin-left: 120px ;
+           margin-left: 90px ;
          }
          footer .subFooter ._linkBx ._lnk li a{
           justify-self: center;
-           padding-left: 70px;
+           margin-left: 80px;
             }
       footer .subFooter ._linkBx {
-        margin-bottom: 30px;
+        margin-bottom: 5px;
          }
         footer .subFooter ._linkBx:last-child {
           margin-bottom: 0; }
@@ -312,5 +443,6 @@
         }
       
       }
+
 
 /*# sourceMappingURL=responsive.css.map */
