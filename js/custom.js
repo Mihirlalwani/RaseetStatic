@@ -7,6 +7,8 @@ $(document).ready(function(){
         });
     });
 
+	
+
 	// On Click Scrollar
 	$('a[rel="relativeanchor"]').click(function(){
 		$('html, body').animate({
@@ -77,3 +79,38 @@ $(document).ready(function(){
 	});
 
 });
+// $('.web').slick({
+// 	dots: true,
+// 	infinite: true,
+// 	speed: 500,
+	
+//   });
+
+$(document).ready(function(){
+	$('.web').slick({
+		infinite: true,
+		speed: 500,
+		fade: true,
+		cssEase: 'linear',
+		autoplay:true,
+		autoplaySpeed:2000,
+		dots:true,
+		
+	});
+  });
+
+//carousel effect
+// const img31=document.querySelector(".hwitWrkSec ._imgCont.web img.img31");
+// const img32=document.querySelector(".hwitWrkSec ._imgCont.web img.img32");
+
+// 	setTimeout(carousel,2000);
+
+// function carousel(){
+//      if(img31.style.display==="none"){
+// 		 img31.style.display="block";
+// 		 img32.style.display="none";
+// 	 }else{
+// 		img31.style.display="none";
+// 		img32.style.display="block";
+// 	 }
+// }

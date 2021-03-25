@@ -405,7 +405,7 @@ header {
           width: 80%;
           font-weight: 300;
           padding-left: 20px;
-          font-size: 20px;
+          font-size: 16px;
           border: 0;
           background-color: transparent; }
       .whtsappIntpCont ._intptFrmCnt ._intptFrm button {
@@ -490,6 +490,15 @@ header {
 
 .hwitWrkSec {
   padding: 40px 0 0; }
+
+  .hwitWrkSec .buttons li a
+{
+  height: 25px;
+  width: 25px;
+  border-radius:50%;
+  position: fixed;
+  background-color: #737b91;
+}
   .hwitWrkSec ._imgCont {
     position: relative;
     border-radius: 10px 10px 0 0;
@@ -500,27 +509,44 @@ header {
       justify-content: center;
       margin-top: 30px;
     }
+
     .hwitWrkSec ._imgCont.web img {
       width: 75%;
       margin-left: 150px; 
       justify-content: center;
       margin-top: 50px;
-      margin-bottom: 100px;}
+      margin-bottom: 14%;}
+      .slick-slider {
+        display: table; 
+        table-layout: fixed; 
+        width: 100%; }
+      .hwitWrkSec ._imgCont.web img.img31.slick-slide {
+        width: 450px !important;
+        padding-top: 50px;
+        margin-left: 150px;}
+        .hwitWrkSec ._imgCont.web img.img32.slick-slide {
+          width: 400px !important;
+          height: 80%;
+          margin: 0px;
+          margin-left: 180px !important; } 
+          .slick-prev:before, .slick-next:before{
+            color:red;
+        }
 
       .hwitWrkSec ._imgCont.mobile img {
         width: 95%;
         margin-left: 0px;
         margin-right: 10%; 
-        margin-bottom: -15%;
         justify-content: center;
-        float: right;}
+        float: right;
+        margin-bottom: -15%;}
         .hwitWrkSec ._cntnt.knowCont {
           padding-left: 0%;
           padding-top: 20%;
           margin-left: 15%; }
   .hwitWrkSec ._cntnt.webCont {
     padding-left: 0%;
-    padding-top: 20%;
+    padding-top: 30%;
     margin-left: 15%; }
     .hwitWrkSec._intrfaceSec ._cntnt {
       padding-left: 0%;      
@@ -534,7 +560,7 @@ header {
         padding-right: 0px;
         color: black; 
       }
-      .hwitWrkSec ._cntnt ._hdngBox p{
+      .hwitWrkSec ._cntnt ._hdngBox > p{
         padding-left: 69px;
         padding-top: 20px;
         color: black;
@@ -639,6 +665,7 @@ header {
 
 .ftrSMSec {
   padding: 0; 
+  background-color: #225E77;
   }
   .ftrSMSec ._cntntBox {
     position: relative;
@@ -677,28 +704,37 @@ header {
           .ftrSMSec ._cntntBox._anyQstnCont ._sm li a:hover {
             color: #E76F51;
             background-color: rgba(218,218,218,0.2) }
-      .ftrSMSec ._cntntBox._anyQstnCont h5 {
-        font-size: 18px; }
-        .ftrSMSec ._cntntBox._anyQstnCont h5 a {
+      
+    .ftrSMSec ._cntntBox._joinCntnt{
+      justify-content: center;
+    }
+    .ftrSMSec ._cntntBox._joinCntnt h1 {
+      margin-bottom: -25px;
+      color: white;
+      align-self: center;
+       }
+       .ftrSMSec ._cntntBox._joinCntnt h5 {
+        font-size: 18px;
+        color: white;
+      align-self: center; }
+        .ftrSMSec ._cntntBox._joinCntnt h5 a {
           font-weight: 400;
           margin-left: 5px;
+          color: white;
           display: inline-block; }
-          .ftrSMSec ._cntntBox._anyQstnCont h5 a:hover {
+          .ftrSMSec ._cntntBox._joinCntnt  h5 a:hover {
             color: #E76F51;
             text-decoration: underline; }
             .ftrSMSec ._anyQstnCont h1 {
               margin-bottom: 30px;
               color: #225E77;
                }
-    .ftrSMSec ._cntntBox._joinCntnt h1 {
-      margin-bottom: -25px;
-      color: white;
-       }
-       
 
        
     .ftrSMSec ._cntntBox .whtsappIntpCont {
-      margin-bottom: 20px; }
+      margin: 20px; 
+      width: 70%;
+      align-self: center;}
       .ftrSMSec ._cntntBox .whtsappIntpCont ._intptFrmCnt ._intptFrm ._inputBox {
         background-color: #fff; }
       .ftrSMSec ._cntntBox .whtsappIntpCont ._intptFrmCnt ._intptFrm button:hover {
@@ -707,54 +743,79 @@ header {
 
 footer {
   background-color: #E5E5E5;
-  padding: 12px 0 2px; }
+  padding: 12px 0 2px; 
+  height: 210px;}
   footer .subFooter {
     width: 100%;
     max-width: 1260px;
-    margin: 0; }
+    margin: 0;
+    justify-content: center; }
     footer .subFooter ._linkBx {
       position: relative;
       width: 100%;
-      flex: 1; 
-      margin-bottom: 5px;}
-      footer .subFooter ._linkBx h3 {
-        margin-bottom: 25px; }
+      margin-bottom: 5px;
+      }
+      footer .subFooter ._linkBx ul {
+        display: flex; 
+        justify-content: center;}
       footer .subFooter ._linkBx .support {
         position: relative;
-        width: 100%;
-        margin-left: 150px; }
+        
+        display: flex; }
         footer .subFooter ._linkBx ._lnk li {
-          width: 100%; }
+          display: inline;
+          margin-top: 5px;}
           footer .subFooter ._linkBx ._lnk li a {
             display: block;
-            font-size: 18px;
-            margin-bottom: 10px; }
-            footer .subFooter ._linkBx ._lnk p a:hover {
+            font-size: 15px;
+            text-transform: capitalize;
+            margin: 10px; }
+            /* footer .subFooter ._linkBx ._lnk p a:hover {
               color: #E76F51;
-              text-decoration: underline; }
+              text-decoration: underline; } */
               footer .subFooter ._linkBx ._lnk li a:hover {
                 color: #E76F51;
                 text-decoration: underline; }
         footer .subFooter ._linkBx ._lnk._ftrSM {
-          margin-top: -10px; 
-          margin-left: 200px;
+          justify-content: center;
+          padding-top: 10px;
         }
           footer .subFooter ._linkBx ._lnk._ftrSM li {
             width: 50px; }
             footer .subFooter ._linkBx ._lnk._ftrSM li a {
-              font-size: 24px;
+              font-size: 20px;
               text-align: center;
               margin-bottom: 0;
+              color: rgb(226, 226, 226);
               display: block;
-              width: 50px;
-              height: 50px;
+              width: 40px;
+              height: 40px;
               justify-content: center;
               align-items: center;
               display: flex;
+              background-color: #E76F51;
               transition: all 0.3s ease-in;
-              border-radius: 6px; }
+              border-radius: 50%; }
               footer .subFooter ._linkBx ._lnk._ftrSM li a:hover {
-                background-color: #E76F51;
-                color: rgb(226, 226, 226); }
+                background-color: #dd522f;
+                color: rgb(226, 226, 226); 
+                box-shadow: #333;}
+                footer .copyright{
+                  justify-content: center;
+                  background-color: #bebebe;
+                  display: flex;
+                  width: 100%;
+                  position: absolute;
+                  bottom: 0;
+                  border-top: 2px black;
+                  
+                }
+                footer .copyright p{
+                  margin: 15px;
+                  font-size: 12px;
+                  text-transform: uppercase;
+                  color: black;
+
+                }
 
 /*# sourceMappingURL=style.css.map */
