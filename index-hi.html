@@ -12,6 +12,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 
@@ -80,26 +82,26 @@
         <div class="container">
             <div class="row">
                 <div class="topSldrCont">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-md-6">
                         <div class="_imgBox" style="background-image: url('images/banner1.jpg')">
                             <!-- <img src="images/banner1.jpg" alt=""> -->
                         </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-md-6">
                         <div class="_cntntBox d_f">
                             <h1>
                                 निरर्थक और अनुपयोगी <span> bill printing</span> से बचत ऐवम <span>ग्राहकों से बेहतर संपर्क</span> स्थापित करने का एक कारगर उपाय
                             </h1>
                             <div class="whtsappIntpCont">
-                                <h3>
+                                <!-- <h3>
                                     <img src="images/whatsapp.svg" alt="">
                                     <span>कृपया अपना Whatsapp नंबर प्रवेश करें</span>
-                                </h3>
+                                </h3> -->
                                 <form class="_intptFrmCnt d_f">
                                     <div class="_intptFrm d_f">
                                         <div class="_inputBox d_f">
-                                            <span>+91</span>
-                                            <input type="number" id="" value="" placeholder="Enter your number">
+                                            <span><img src="images/whatsapp.svg" alt=""></span>
+                                            <input type="number" id="" value="" placeholder="कृपया अपना Whatsapp नंबर प्रवेश करें">
                                         </div>
                                         <button type="type"> Enter </button>                                        
                                     </div>
@@ -166,60 +168,62 @@
             </div>
         </div>
     </section>
-
     <section class="hwitWrkSec _greenColor _webIntrfcSec" id="howItWorks">
         <div class="_hdngBox">
             <h1>Raseet कैसे कार्य करता है ?</h1>
         </div>
         <div class="container d_f">
             <div class="col-lg-6">
-                <div class="_imgCont web">
-                    <img src="images/img1.png" alt="">
+                <div class="_imgCont letUsKnow">
+                    <img src="images/img1.svg" alt="">
                 </div>
             </div>
-            <div class="col-lg-6" style="width: 40%;">
-                <div class="_cntnt webCont">
+            <div class="col-lg-6 knowContC" >
+                <div class="_cntnt knowCont">
                     <div class="_hdngBox">
-                        <h1>Raseet कैसे कार्य करता है?</h1>
+                        <h1><span>01</span> Let us Know</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="hwitWrkSec _intrfaceSec">
+    <section class="hwitWrkSec _intrfaceSec" id="get-onboard">
         <div class="container">            
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-md-6">
                 <div class="_cntnt mobileCont">
                     <div class="_hdngBox">
-                        <h1>Mobile interface for the customer</h1>
+                        <h1><span>02</span>  Get Onboarded</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-md-6 ">
                 <div class="_imgCont mobile">
                     <img src="images/img2.png" alt="">
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- <section class="hwitWrkSec _dashboardSec">
-        <div class="container">            
-            <div class="col-lg-12">
-                <div class="_cntnt">
+    <section class="hwitWrkSec _greenColor _webIntrfcSec" id="start-serving">
+        <div class="container d_f">
+            <div class="col-lg-6 col-md-6">
+                <div class="_imgCont web">
+                    <img src="images/img31.png" class="img31" alt="">
+                    <img src="images/img32.png" class="img32" alt="">
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 webContC" >
+                <div class="_cntnt webCont">
                     <div class="_hdngBox">
-                        <h1>Dashboard for the shop</h1>
+                        <h1><span>03</span> Start serving your customers</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-12">
-                <div class="_imgCont">
-                    <img src="images/img3.png" alt="">
-                </div>
-            </div>
         </div>
-    </section> -->
+    </section>
 
     <section class="faqSec" id="FAQs">
         <div class="container">
@@ -295,7 +299,7 @@
 
     <section class="ftrSMSec" id="contact">
         <div class="container">
-            <div class="col-lg-6 col-md-6">
+            <!-- <div class="col-lg-6 col-md-6">
                 <div class="row">
                     <div class="_cntntBox _anyQstnCont d_f">
                         <h1>आपकी सेवा में सदैव तत्पर</h1>
@@ -326,32 +330,24 @@
                             <a href="javascript:;">support@raseet.com</a>
                         </h5>
                     </div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-6">
-                <div class="row">
+                </div> -->
+            <!-- </div> -->                        
                     <div class="_cntntBox _joinCntnt d_f">
                         <h1>Raseet से जुड़ें और लाभान्वित हों</h1>
                         <div class="whtsappIntpCont">
-                            <h3>
-                                <img src="images/whatsapp.svg" alt="">
+                            <!-- <h3>
+                                
                                 <span>कृपया अपना Whatsapp नंबर प्रवेश करें</span>
-                            </h3>
+                            </h3> -->
                             <form class="_intptFrmCnt d_f">
                                 <div class="_intptFrm d_f">
                                     <div class="_inputBox d_f">
-                                        <span>+91</span>
-                                        <input type="number" id="" value="" placeholder="enter your number">
+                                        <span><img src="images/whatsapp.svg" alt=""></span>
+                                        <input type="number" id="" value="" placeholder="कृपया अपना Whatsapp नंबर प्रवेश करें">
                                     </div>
                                     <button type="type"> Enter </button>                                        
                                 </div>
-                                <div class="_intptFrm d_f" style="display: none">
-                                    <div class="_inputBox d_f">
-                                        <span>+91</span>
-                                        <input type="number" id="" value="" placeholder="enter your number">
-                                    </div>
-                                    <button type="type"> Enter </button>                                        
-                                </div>
+                                <h5>कृपया अपने सुझाव हमें <span><a href="#">hello@raseet.com</a></span>पर email करें</h5>
 
                                 <!-- <h4 class="_emailID">Have an <span>Email ID?</span></h4> -->
                                 <!-- <br> -->
@@ -365,30 +361,34 @@
 
     <footer>
         <div class="container">
-            <div class="subFooter d_f">
+            <div class="subFooter ">
                 <div class="_linkBx">
-                    
-                    <ul class="_lnk">
-                        <p><a href="javascript:;">Why Raseet</a> |
-                        <a href="javascript:;">How it works</a> |
-                        <a href="javascript:;">FAQ</a> |
-                        <a href="javascript:;">Contact us</a> </p>
-                    </ul>
-                </div>
-                <div class="_linkBx">
-                    
-                    <ul class="_lnk support">
-                        <li><a href="javascript:;">support@raseet.com</a></li>
-                    </ul>
-                </div>
-                <div class="_linkBx">
-                    <ul class="_lnk _ftrSM d_f" >
+                    <ul class="_lnk _ftrSM d_f" >                        
                         <li><a style="text-decoration: none;" href="javascript:;"><i class="fab fa-facebook-f"></i></a></li>
                         <li><a style="text-decoration: none;" href="javascript:;"><i class="fab fa-instagram"></i></a></li>
                         <li><a style="text-decoration: none;" href="javascript:;"><i class="fab fa-twitter"></i></a></li>
+                        <li><a style="text-decoration: none;" href="javascript:;"><i class="fab fa-youtube"></i></a></li>
                     </ul>
                 </div>
+                <div class="_linkBx">                    
+                    <ul class="_lnk">
+                        <li><a href="javascript:;">Why Raseet</a> </li>
+                        <li><a href="javascript:;">How it works</a> </li>
+                        <li><a href="javascript:;">FAQ</a></li>
+                        <li><a href="javascript:;">Contact us</a></li> 
+                    </ul>
+                </div>
+                <!-- <div class="_linkBx">                    
+                    <ul class="_lnk support">
+                        <li><a href="javascript:;">support@raseet.com</a></li>
+                    </ul>
+                </div> -->
+                
+                
             </div>            
+        </div>
+        <div class="copyright">
+            <p type="copyright">&copy;2021 Raseet | All Rights Reserved </p>
         </div>
     </footer>
 
