@@ -78,13 +78,18 @@ $(document).ready(function(){
 		}		
 	});
 
+	function zoomOutMobile() {
+		var viewport = document.querySelector('meta[name="viewport"]');
+	  
+		if ( viewport ) {
+		  viewport.content = "initial-scale=0.1";
+		  viewport.content = "width=device-width";
+		}
+	  }
+	  
+	  zoomOutMobile();
+
 });
-// $('.web').slick({
-// 	dots: true,
-// 	infinite: true,
-// 	speed: 500,
-	
-//   });
 
 $(document).ready(function(){
 	$('.web').slick({
@@ -98,19 +103,3 @@ $(document).ready(function(){
 		
 	});
   });
-
-//carousel effect
-// const img31=document.querySelector(".hwitWrkSec ._imgCont.web img.img31");
-// const img32=document.querySelector(".hwitWrkSec ._imgCont.web img.img32");
-
-// 	setTimeout(carousel,2000);
-
-// function carousel(){
-//      if(img31.style.display==="none"){
-// 		 img31.style.display="block";
-// 		 img32.style.display="none";
-// 	 }else{
-// 		img31.style.display="none";
-// 		img32.style.display="block";
-// 	 }
-// }

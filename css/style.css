@@ -23,12 +23,16 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
+@-ms-viewport{
+  width: device-width;
+}
 body {
   font-size: 16px;
   line-height: 26px;
   color: #545454;
   font-family: 'Nunito Sans', sans-serif;
   width: fit-content;
+  position: absolute;
 }
 
 body.noScroll {
@@ -182,7 +186,14 @@ section, footer, header {
       color: #fff;
       font-weight: 400;
       background-color: #ccc; }
-
+.raseet{
+  letter-spacing: 2px;
+  margin-left: 0px;
+}
+.raseetnav{
+  letter-spacing: 2px;
+  margin-left: 4px;
+}
 header {
   width: 100%;
   position: fixed;
@@ -210,7 +221,8 @@ header {
         }
         header .subHdr ._leftArea .menu-left li a {
           color: #225E77;
-          padding-left: 25px; }
+          padding-left: 25px;
+          font-size: 17px; }
           header .subHdr ._leftArea .menu-left .business {
             font-weight: bolder; }
 
@@ -373,7 +385,7 @@ header {
     .whtsappIntpCont ._intptFrmCnt ._intptFrm {
       position: relative;
       width: 100%;
-      margin-top: 50px; }
+      margin-top: 7%; }
       .whtsappIntpCont ._intptFrmCnt ._intptFrm ._inputBox {
         position: relative;
         width: 80%;
@@ -727,9 +739,10 @@ header {
       align-self: center;
        }
        .ftrSMSec ._cntntBox._joinCntnt h5 {
-        font-size: 18px;
+        font-size: 30px;
         color: white;
-      align-self: center; }
+      align-self: center; 
+      margin-top: 4%;}
         .ftrSMSec ._cntntBox._joinCntnt h5 a {
           font-weight: 400;
           margin-left: 5px;
@@ -780,7 +793,7 @@ footer {
           margin-top: 5px;}
           footer .subFooter ._linkBx ._lnk li a {
             display: block;
-            font-size: 15px;
+            font-size: 17px;
             text-transform: capitalize;
             margin: 10px; }
             /* footer .subFooter ._linkBx ._lnk p a:hover {
