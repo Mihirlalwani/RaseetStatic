@@ -530,16 +530,24 @@
     min-width: auto; 
     margin-bottom: 0;}
   header .subHdr ._logoBox img {
-    height: 30px; 
+    height: 45px; 
     margin-bottom: 0;
     margin-top: 7.5px;}
     header .subHdr ._leftArea .menu-left li a {
       color: #225E77;
       padding-left: 15px; 
-      font-size: small;
+      font-size: 16px;
       margin-bottom: 5%;}
+      header .subHdr ._leftArea .menu-left{
+        margin-top: 5%;
+      }
+
+      header .subHdr{
+        margin-bottom: 15px;
+      }
   header .subHdr ._rightArea .mainNav {
-    flex-direction: row-reverse; }
+    flex-direction: row-reverse;
+    margin-top: 10%; }
   header .subHdr ._rightArea .hmbrgerMenu {
     margin-left: 15px;
     margin-right: 10px;
@@ -673,6 +681,7 @@
           padding-top: 20px;
           color: black;
           width: 600px;
+          font-size: 19px;
         }
         .hwitWrkSec ._cntnt.mobileCont {
           margin-top: 10%;
