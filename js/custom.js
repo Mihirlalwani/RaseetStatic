@@ -12,7 +12,7 @@ $(document).ready(function(){
 	// On Click Scrollar
 	$('a[rel="relativeanchor"]').click(function(){
 		$('html, body').animate({
-			scrollTop: $( $.attr(this, 'href') ).offset().top - 65
+			scrollTop: $( $.attr(this, 'href') ).offset().top -65
 		}, 1000);
 		return false;
 	});
@@ -78,16 +78,17 @@ $(document).ready(function(){
 		}		
 	});
 
-	function zoomOutMobile() {
-		var viewport = document.querySelector('meta[name="viewport"]');
-	  
-		if ( viewport ) {
-		  viewport.content = "initial-scale=0.1";
-		  viewport.content = "width=device-width";
+	$(".vertical-nav").hide(); //hide your div initially
+    var topOfOthDiv = $("#howItWorks").offset().top;
+	var botOfDiv=$("#start-serving").offset().top;
+    $(window).scroll(function() {
+        if($(window).scrollTop() > topOfOthDiv-100) { //scrolled past the other div?
+            $(".vertical-nav").show(); //reached the desired point -- show div
+        }
+		else if($(window).scrollTop() > botOfDiv-100){
+			$(".vertical-nav").hide();
 		}
-	  }
-	  
-	  zoomOutMobile();
+    });
 
 });
 
