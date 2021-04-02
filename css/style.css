@@ -505,6 +505,7 @@ header {
   transform: translateY(-50%);
   right: 3%;
   z-index: 10;
+  display: none;
   /* border: 1px solid #ccc; */
   border-radius: 500px;
   background-color: white;
@@ -518,7 +519,7 @@ header {
 }
 .vertical-nav .vnav .vnav-item{
   display: flex;
-  background-color: #E76F51;
+  background-color: #dadada;
   border-radius: 50%;
   height: 2rem;
   width: 2rem;
@@ -534,8 +535,15 @@ header {
   display: flex;
   text-align: center;
   justify-content: center;
-  color: rgb(241, 241, 241);
+  color: rgb(163, 163, 163);
   
+}
+.vertical-nav .vnav .vnav-item.active{
+  background-color: #f0471c;
+  
+}
+.vertical-nav .vnav .vnav-item.active a{
+    color: white;
 }
 
 .hwitWrkSec {

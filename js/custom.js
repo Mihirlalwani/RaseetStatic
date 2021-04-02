@@ -78,17 +78,20 @@ $(document).ready(function(){
 		}		
 	});
 
-	$(".vertical-nav").hide(); //hide your div initially
-    var topOfOthDiv = $("#howItWorks").offset().top;
-	var botOfDiv=$("#start-serving").offset().top;
-    $(window).scroll(function() {
-        if($(window).scrollTop() > topOfOthDiv-100) { //scrolled past the other div?
-            $(".vertical-nav").show(); //reached the desired point -- show div
-        }
-		else if($(window).scrollTop() > botOfDiv-100){
-			$(".vertical-nav").hide();
-		}
-    });
+	
+		// $(".vertical-nav").hide(); //hide your div initially
+		// var topOfOthDiv = $("#howItWorks").offset().top;
+		// var botOfDiv=$("#start-serving").offset().top;
+		// $(window).scroll(function() {
+		// 	if($(window).scrollTop() > topOfOthDiv-100) { //scrolled past the other div?
+		// 		$(".vertical-nav").show(); //reached the desired point -- show div
+		// 	}
+		// 	 if($(window).scrollY() = botOfDiv){
+		// 		$(".vertical-nav").hide();
+		// 	}
+		// });
+
+	
 
 });
 
@@ -103,4 +106,49 @@ $(document).ready(function(){
 		dots:true,
 		
 	});
+  });
+
+
+  
+  window.addEventListener("scroll",function(e){
+	if($(window).width()>1024){
+	const scroll=this.scrollY;
+	const navBtn=document.querySelectorAll(".vnav-item");
+	const sec1=document.getElementById("howItWorks");
+	const sec2=document.getElementById("get-onboard");
+	const sec3=document.getElementById("start-serving");
+	const vnav=document.querySelector(".vertical-nav");
+	
+	if(scroll>=sec1.offsetTop-(sec1.offsetHeight/2) && scroll<sec3.offsetTop+(sec3.offsetHeight/2)-70){
+		$(".vertical-nav").show(500);
+	}
+	else{
+		$(".vertical-nav").hide(500);
+	}
+	
+		if(scroll>sec1.offsetTop-70 && scroll<sec1.offsetTop+(sec1.offsetHeight/2)){
+			 navBtn[0].classList.add("active");
+			 setTimeout(() => {
+				navBtn[1].classList.remove("active");
+				navBtn[2].classList.remove("active");
+			}, 50);
+			
+		}
+		else if(scroll>sec2.offsetTop-70 && scroll<sec2.offsetTop+(sec2.offsetHeight/2)){
+			setTimeout(() => {
+				navBtn[1].classList.add("active");
+				navBtn[0].classList.remove("active");
+				navBtn[2].classList.remove("active");
+			}, 50);
+			
+		}
+		else if(scroll>sec3.offsetTop-70 && scroll<sec3.offsetTop+(sec3.offsetHeight/2)){
+			setTimeout(() => {
+				navBtn[2].classList.add("active");
+				navBtn[0].classList.remove("active");
+				navBtn[1].classList.remove("active");
+			}, 50);			
+		}
+	}
+	
   });
