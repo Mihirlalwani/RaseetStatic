@@ -33,8 +33,8 @@
                         </a>
                     </div>
                     <ul class="menu-left d_f">
-                        <li><a href="#" class="business">for business</a></li> 
-                        <li><a href="#" class="customer">for customer</a></li>
+                        <li class="business_item"><a rel="relativeanchor" href="#" class="business"><img src="images/business.svg" alt="">Business</a></li> 
+                        <li class="customer_item"><a rel="relativeanchor" href="#" class="customer"><img src="images/customer.svg" alt="">Customer</a></li>
                     </ul>
                 </div>
                 <div class="_rightArea d_f">
@@ -97,7 +97,7 @@
                                     <img src="images/whatsapp.svg" alt="">
                                     <span>कृपया अपना Whatsapp नंबर प्रवेश करें</span>
                                 </h3> -->
-                                <form class="_intptFrmCnt d_f">
+                                <form class="_intptFrmCnt d_f" id="contact-form">
                                     <div class="_intptFrm d_f">
                                         <div class="_inputBox d_f">
                                             <span><img src="images/whatsapp.svg" alt=""></span>
@@ -108,9 +108,9 @@
                                     <div class="_intptFrm d_f" style="display: none">
                                         <div class="_inputBox d_f">
                                             <span>+91</span>
-                                            <input type="number" id="" value="" placeholder="Enter your number">
+                                            <input type="number" id="phone-input" value="" placeholder="Enter your number">
                                         </div>
-                                        <button type="type"> Enter </button>                        
+                                        <button type="type" class="enter"> Enter </button>                        
                                     </div>
                                     <!-- <h4 class="_emailID">Have an <span>Email ID?</span></h4> -->
                                 </form>
@@ -168,6 +168,16 @@
             </div>
         </div>
     </section>
+    <div class="vertical-nav">
+        <!-- <div class="_hdngBox vnav">
+            <h1>How it Works ?</h1>
+        </div> -->
+        <ul class="vnav">
+            <li class="vnav-item"><a rel="relativeanchor" href="#howItWorks">01</a><p  class="p1"></p></li>
+            <li class="vnav-item"><a rel="relativeanchor" href="#get-onboard">02</a><p class="p2"></p></li>
+            <li class="vnav-item"><a rel="relativeanchor" href="#start-serving">03</a><p></p></li>
+        </ul>
+    </div>
     <section class="hwitWrkSec _greenColor _webIntrfcSec" id="howItWorks">
         <div class="_hdngBox">
             <h1><span class="raseet">RASEET</span> कैसे कार्य करता है ?</h1>
@@ -175,7 +185,7 @@
         <div class="container d_f">
             <div class="col-lg-6">
                 <div class="_imgCont letUsKnow">
-                    <img src="images/img1.svg" alt="">
+                    <img src="images/img1.png" alt="">
                 </div>
             </div>
             <div class="col-lg-6 knowContC" >
@@ -208,21 +218,20 @@
     </section>
     <section class="hwitWrkSec _greenColor _webIntrfcSec" id="start-serving">
         <div class="container d_f">
-            <div class="col-lg-6 col-md-6">
-                <div class="_imgCont web">
-                    <img src="images/img31.png" class="img31" alt="">
-                    <img src="images/img32.png" class="img32" alt="">
+            <div class="col-lg-6">
+                <div class="_imgCont letUsKnow start-serving">
+                    <img src="images/img3.png" alt="">
                 </div>
-            </div>
-            <div class="col-lg-6 col-md-6 webContC" >
-                <div class="_cntnt webCont">
-                    <div class="_hdngBox">
-                        <h1><span>03</span> Start serving your customers</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    </div>
+            </div>            
+        <div class="col-lg-6 col-md-6 webContC" >
+            <div class="_cntnt webCont">
+                <div class="_hdngBox">
+                    <h1><span>03</span> Start serving your customers</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
             </div>
         </div>
+    </div>
     </section>
 
     <section class="faqSec" id="FAQs">

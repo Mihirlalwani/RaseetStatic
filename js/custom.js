@@ -77,22 +77,6 @@ $(document).ready(function(){
 			$('.hmbrgerMenu').removeClass('active');
 		}		
 	});
-
-	
-		// $(".vertical-nav").hide(); //hide your div initially
-		// var topOfOthDiv = $("#howItWorks").offset().top;
-		// var botOfDiv=$("#start-serving").offset().top;
-		// $(window).scroll(function() {
-		// 	if($(window).scrollTop() > topOfOthDiv-100) { //scrolled past the other div?
-		// 		$(".vertical-nav").show(); //reached the desired point -- show div
-		// 	}
-		// 	 if($(window).scrollY() = botOfDiv){
-		// 		$(".vertical-nav").hide();
-		// 	}
-		// });
-
-	
-
 });
 
 $(document).ready(function(){
@@ -108,9 +92,83 @@ $(document).ready(function(){
 	});
   });
 
+  const enterBtn=document.querySelector(".enter");
+
+  enterBtn.addEventListener("click",function submitToAPI(e) {
+    e.preventDefault();
+	console.log("In Api");
+    var URL = "https://c4gh6cob99.execute-api.ap-south-1.amazonaws.com/default/send-mail";
+
+        //  var Namere = /[A-Za-z]{1}[A-Za-z]/;
+        //  if (!Namere.test($("#name-input").val())) {
+        //               alert ("Name can not less than 2 char");
+        //      return;
+        //  }
+         var mobilere = /[0-9]{10}/;
+         if (!mobilere.test($("#phone-input").val())) {
+             alert ("Please enter valid mobile number");
+             return;
+         }
+        //  if ($("#email-input").val()=="") {
+        //      alert ("Please enter your email id");
+        //      return;
+        //  }
+
+        //  var reeamil = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,6})?$/;
+        //  if (!reeamil.test($("#email-input").val())) {
+        //      alert ("Please enter valid email address");
+        //      return;
+        //  }
+
+    // var name = $("#name-input").val();
+    var phone = $("#phone-input").val();
+    // var email = $("#email-input").val();
+    // var desc = $("#description-input").val();
+    var data = {
+    //    name : name,
+       phone : phone
+    //    email : email,
+    //    desc : desc
+     };
+
+    $.ajax({
+      type: "POST",
+      url : "https://c4gh6cob99.execute-api.ap-south-1.amazonaws.com/default/send-mail",
+      dataType: "json",
+      crossDomain: "true",
+      contentType: "application/json; charset=utf-8",
+      data: JSON.stringify(data),
+
+      
+      success: function () {
+        // clear form and show a success message
+        alert("Successfull");
+        document.getElementById("contact-form").reset();
+    location.reload();
+      },
+      error: function () {
+        // show an error message
+        alert("UnSuccessfull");
+      }});
+  });
+  
+ 
+//   function(e){
+// 	  e.preventDefault();
+// 	  const input=document.querySelector(".input").value;
+// 	  const invalidMsg=document.querySelector(".invalid-msg");
+// 	  if(input.length<10 || input.length>10){
+// 		invalidMsg.innerHTML="Please enter valid 10 digit number*";
+// 		console.log(invalidMsg);
+// 		  setTimeout(() => {
+// 			invalidMsg.innerHTML="";
+// 		  }, 2000); 
+// 	  }
+	  
+//   })
 
   
-  window.addEventListener("scroll",function(e){
+  window.addEventListener("scroll",function(){
 	if($(window).width()>1024){
 	const scroll=this.scrollY;
 	const navBtn=document.querySelectorAll(".vnav-item");
@@ -120,10 +178,10 @@ $(document).ready(function(){
 	const vnav=document.querySelector(".vertical-nav");
 	
 	if(scroll>=sec1.offsetTop-(sec1.offsetHeight/2) && scroll<sec3.offsetTop+(sec3.offsetHeight/2)-70){
-		$(".vertical-nav").show(500);
+		$(".vertical-nav").show(10);
 	}
 	else{
-		$(".vertical-nav").hide(500);
+		$(".vertical-nav").hide(10);
 	}
 	
 		if(scroll>sec1.offsetTop-70 && scroll<sec1.offsetTop+(sec1.offsetHeight/2)){
@@ -131,16 +189,14 @@ $(document).ready(function(){
 			 setTimeout(() => {
 				navBtn[1].classList.remove("active");
 				navBtn[2].classList.remove("active");
+				
 			}, 50);
 			
 		}
 		else if(scroll>sec2.offsetTop-70 && scroll<sec2.offsetTop+(sec2.offsetHeight/2)){
-			setTimeout(() => {
-				navBtn[1].classList.add("active");
+			    navBtn[1].classList.add("active");
 				navBtn[0].classList.remove("active");
 				navBtn[2].classList.remove("active");
-			}, 50);
-			
 		}
 		else if(scroll>sec3.offsetTop-70 && scroll<sec3.offsetTop+(sec3.offsetHeight/2)){
 			setTimeout(() => {

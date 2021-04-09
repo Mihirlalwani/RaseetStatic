@@ -19,7 +19,12 @@
        }
     .topSldrSec .topSldrCont ._cntntBox {
       margin-bottom: 25px; }
-
+      .hwitWrkSec ._cntnt ._hdngBox h1{
+        color: #19485c;
+      }
+      .hwitWrkSec ._cntnt ._hdngBox h1 span{
+        background-color: white;
+      }
   .whtsappIntpCont ._intptFrmCnt {
     height: auto; }
     .whtsappIntpCont ._intptFrmCnt ._intptFrm {
@@ -34,7 +39,7 @@
 /* Laptop view */
 @media (min-width:1025px) and (max-width:1279px){
   header .subHdr ._leftArea .menu-left li a{
-    padding-left: 10px;
+    padding-left: 0px;
     font-size: 15px;
   }
   header .subHdr ._rightArea .mainNav .menu li a{
@@ -75,9 +80,9 @@
 @media (max-width: 1024px) {
   header .subHdr ._leftArea .menu-left li a {
    
-    padding-left: 15px; 
+    padding-left: 0px; 
     font-size: small;
-    margin-bottom: 5%;}
+    margin-bottom: 0%;}
   .topSldrSec .topSldrCont{
     padding-top: 0px; 
     display: flex;}
@@ -165,6 +170,7 @@
       font-size: 16px;
       text-transform: initial;
       letter-spacing: 0; }
+      
 
   .topSldrSec {
     padding-top: 85px; }
@@ -266,7 +272,9 @@
   header .subHdr {
     height: 65px;
     align-items: center; }
-
+    header .subHdr ._rightArea .mainNav{
+      margin-bottom: 9%;
+    }
     .topSldrSec .topSldrCont ._cntntBox h1{
       font-size: 38px;
     }
@@ -535,11 +543,14 @@
     height: 45px; 
     margin-bottom: 0;
     margin-top: 7.5px;}
+    header .subHdr ._leftArea .menu-left li{
+      margin-bottom: 0;
+    }
     header .subHdr ._leftArea .menu-left li a {
       color: #225E77;
-      padding-left: 15px; 
-      font-size: 22px;
-      margin-bottom: 5%;}
+      padding-left: 0px; 
+      font-size: 14px;
+      margin-bottom: 0%;}
       header .subHdr ._leftArea .menu-left{
         margin-top: 5%;
       }

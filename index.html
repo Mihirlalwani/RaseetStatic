@@ -9,6 +9,7 @@
     <!-- Updatd Font Awesome -->
     <script src="https://kit.fontawesome.com/4f01be3b36.js" crossorigin="anonymous"></script>
     <!-- Updatd Font Awesome -->
+    <script src="js/lambda.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
@@ -36,8 +37,8 @@
                         </a>
                     </div>
                     <ul class="menu-left d_f">
-                        <li><a rel="relativeanchor" href="#" class="business">for business</a></li> 
-                        <li><a rel="relativeanchor" href="#" class="customer">for customer</a></li>
+                        <li class="business_item"><a rel="relativeanchor" href="#" class="business"><img src="images/business.svg" alt="">Business</a></li> 
+                        <li class="customer_item"><a rel="relativeanchor" href="#" class="customer"><img src="images/customer.svg" alt="">Customer</a></li>
                     </ul>
                 </div>
                 <div class="_rightArea d_f">
@@ -100,15 +101,16 @@
                                     <img src="images/whatsapp.svg" alt="">
                                     <span>Enter your Whatsapp number</span>
                                 </h3> -->
-                                <form class="_intptFrmCnt d_f">
+                                <form class="_intptFrmCnt d_f" id="contact-form">
                                     <div class="_intptFrm d_f">
                                         <div class="_inputBox d_f col-md-6">
                                             <span><img src="images/whatsapp.svg" alt=""></span>
-                                            <input type="number" id="" value="" placeholder="Enter your Whatsapp number">
+                                            <input type="number" class="input" value="" id="phone-input" placeholder="Enter your Whatsapp number">
                                         </div>
                                         
-                                        <button type="type"> Enter </button>                       
+                                        <button type="submit" class="enter"> Enter </button>                       
                                     </div>
+                                    <p class="invalid-msg"></p>
                                     <div class="_intptFrm d_f" style="display: none">
                                         <div class="_inputBox d_f">
                                             <span>+91</span>
@@ -174,20 +176,23 @@
     </section>
 
     <div class="vertical-nav">
+        <!-- <div class="_hdngBox vnav">
+            <h1>How it Works ?</h1>
+        </div> -->
         <ul class="vnav">
-            <li class="vnav-item"><a rel="relativeanchor" href="#howItWorks">01</a></li>
-            <li class="vnav-item"><a rel="relativeanchor" href="#get-onboard">02</a></li>
-            <li class="vnav-item"><a rel="relativeanchor" href="#start-serving">03</a></li>
+            <li class="vnav-item"><a rel="relativeanchor" href="#howItWorks">01</a><p  class="p1"></p></li>
+            <li class="vnav-item"><a rel="relativeanchor" href="#get-onboard">02</a><p class="p2"></p></li>
+            <li class="vnav-item"><a rel="relativeanchor" href="#start-serving">03</a><p></p></li>
         </ul>
     </div>
     <section class="hwitWrkSec _greenColor _webIntrfcSec" id="howItWorks">
-        <div class="_hdngBox">
+        <div class="_hdngBox hiw">
             <h1>How it Works ?</h1>
         </div>
         <div class="container d_f">
             <div class="col-lg-6">
                 <div class="_imgCont letUsKnow">
-                    <img src="images/img1.svg" alt="">
+                    <img src="images/img1.png" alt="">
                 </div>
             </div>
             <div class="col-lg-6 knowContC" >
@@ -220,12 +225,11 @@
     </section>
     <section class="hwitWrkSec _greenColor _webIntrfcSec" id="start-serving">
         <div class="container d_f">
-            <div class="col-lg-6 col-md-6">
-                <div class="_imgCont web">
-                    <img src="images/img31.png" class="img31" alt="">
-                    <img src="images/img32.png" class="img32" alt="">
-                </div>
-            </div>
+                <div class="col-lg-6">
+                    <div class="_imgCont letUsKnow start-serving">
+                        <img src="images/img3.png" alt="">
+                    </div>
+                </div>            
             <div class="col-lg-6 col-md-6 webContC" >
                 <div class="_cntnt webCont">
                     <div class="_hdngBox">
@@ -322,10 +326,11 @@
                                 <div class="_intptFrm foot d_f">
                                     <div class="_inputBox foot d_f">
                                         <span><img src="images/whatsapp.svg" alt=""></span>
-                                        <input type="number" id="" value="" placeholder="Enter your Whatsapp number">
+                                        <input type="number" class="input" value="" placeholder="Enter your Whatsapp number">
                                     </div>
-                                    <button type="type"> Enter </button>                                        
+                                    <button type="submit" class="enter"> Enter </button>                                        
                                 </div>
+                                <p class="invalid-msg"></p>
                                 <h5>For any queries, you can write to us at <span><a href="#">hello@raseet.com</a></span> </h5>                              
                                 <!-- <h4 class="_emailID">Have an <span>Email ID?</span></h4> -->
                                 <!-- <br> -->
@@ -335,6 +340,7 @@
                 
         </div>
     </section>
+    
 
     <footer>
         <div class="container">
@@ -368,12 +374,17 @@
             <p type="copyright">&copy;2021 <span class="raseet">RASEET</span> | All Rights Reserved </p>
         </div>
     </footer>
-
+    <!-- <div class="overlay">
+        <div class="popup">
+            
+        </div>
+    </div> -->
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script src="js/slick.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/owl.carousel.min.js" type="text/javascript" charset="utf-8"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
+   
     <script src="js/custom.js" type="text/javascript" charset="utf-8"></script>
-
+    
 </body>
 </html>
