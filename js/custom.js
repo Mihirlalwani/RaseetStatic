@@ -97,7 +97,7 @@ $(document).ready(function(){
   enterBtn.addEventListener("click",function submitToAPI(e) {
     e.preventDefault();
 	console.log("In Api");
-    var URL = "https://c4gh6cob99.execute-api.ap-south-1.amazonaws.com/default/send-mail";
+    var URL = "https://pagcd7s9md.execute-api.ap-south-1.amazonaws.com/default/send-mail-website-input";
 
         //  var Namere = /[A-Za-z]{1}[A-Za-z]/;
         //  if (!Namere.test($("#name-input").val())) {
@@ -126,15 +126,18 @@ $(document).ready(function(){
     // var desc = $("#description-input").val();
     var data = {
     //    name : name,
-       phone : phone
+       phone : phone,
+	   
+	   
     //    email : email,
     //    desc : desc
      };
 
     $.ajax({
       type: "POST",
-      url : "https://c4gh6cob99.execute-api.ap-south-1.amazonaws.com/default/send-mail",
+      url : "https://pagcd7s9md.execute-api.ap-south-1.amazonaws.com/default/send-mail-website-input",
       dataType: "json",
+	  headers:{"x-api-key":"9OvsRPph281TqJZsKRSMe2EmLn0BkY2688YP9XBj"},
       crossDomain: "true",
       contentType: "application/json; charset=utf-8",
       data: JSON.stringify(data),
@@ -189,7 +192,8 @@ $(document).ready(function(){
 			 setTimeout(() => {
 				navBtn[1].classList.remove("active");
 				navBtn[2].classList.remove("active");
-				
+				document.querySelector(".p2").style.display="none"; 
+				document.querySelector(".p1").style.display="block"
 			}, 50);
 			
 		}
@@ -197,6 +201,8 @@ $(document).ready(function(){
 			    navBtn[1].classList.add("active");
 				navBtn[0].classList.remove("active");
 				navBtn[2].classList.remove("active");
+				document.querySelector(".p1").style.display="none";
+				document.querySelector(".p2").style.display="block"; 
 		}
 		else if(scroll>sec3.offsetTop-70 && scroll<sec3.offsetTop+(sec3.offsetHeight/2)){
 			setTimeout(() => {
@@ -204,6 +210,8 @@ $(document).ready(function(){
 				navBtn[0].classList.remove("active");
 				navBtn[1].classList.remove("active");
 			}, 50);			
+			document.querySelector(".p2").style.display="none";
+			document.querySelector(".p1").style.display="none";
 		}
 	}
 	
