@@ -187,7 +187,7 @@ $(document).ready(function(){
       type: "POST",
       url : "https://pagcd7s9md.execute-api.ap-south-1.amazonaws.com/default/send-mail-website-input",
       dataType: "json",
-	  headers:{"x-api-key":"9OvsRPph281TqJZsKRSMe2EmLn0BkY2688YP9XBj"},
+	  headers:{"x-api-key":"9OvsRPph281TqJZsKRSMe2EmLn0BkY2688YP9X"},
       crossDomain: "true",
       contentType: "application/json; charset=utf-8",
       data: JSON.stringify(data),
