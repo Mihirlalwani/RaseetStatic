@@ -108,7 +108,9 @@
          margin-left: 4%;
          
        }
-
+.fail,.fail-foot,.success,.success-foot,.response,.response-foot{
+  margin-top: 3%;
+}
   ._webIntrfcSec {
     padding-top: 0px; }
     ._webIntrfcSec .container {
@@ -565,7 +567,7 @@
     margin-left: 15px;
     margin-right: 10px;
      }
-
+    
   .topSldrSec {
     padding-top: 65px;
     padding-bottom: 0; }

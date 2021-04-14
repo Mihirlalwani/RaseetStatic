@@ -109,15 +109,18 @@
                                         
                                         <button type="submit" class="enter"> Enter </button>                       
                                     </div>
-                                    <p class="invalid-msg"></p>
-                                    <div class="_intptFrm d_f" style="display: none">
+                                    <p class="response"><i class="fas fa-times"></i> &nbsp; Please enter valid mobile number.</p>
+                                    <p class="success"><i class="far fa-check-circle"></i> &nbsp; Thank You! We will contact you soon.</p>
+                                    <p class="fail"><i class="fas fa-times"></i> &nbsp; Something went wrong! Please Try again.</p>
+                                    <!-- <div class="_intptFrm d_f" style="display: none">
                                         <div class="_inputBox d_f">
                                             <span>+91</span>
                                             <input type="number" id="" value="" placeholder="Enter your number">
                                             
                                         </div>
-                                        <button type="type"> Enter </button>                    
-                                    </div>
+                                        <button type="type"> Enter </button> 
+                                        <p class="response"></p>                   
+                                    </div> -->
                                     <!-- <h4 class="_emailID">Have an Email ID?</h4> -->
                                 </form>
                             </div>
@@ -166,7 +169,7 @@
                         <div class="_icon"><img src="images/icon_5.svg" alt=""></div>
                         <h3>Empowers you</h3>
                         <p>
-                            <span class="raseet">RASEET</span> empowers you to fight your online comptition and retail your customer.
+                            <span class="raseet">RASEET</span> empowers you to fight your online comptition and retain your customer.
                         </p>
                     </div>
                 </div>
@@ -198,7 +201,8 @@
                 <div class="_cntnt knowCont">
                     <div class="_hdngBox">
                         <h1><span>01</span> Let us Know</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p>Reaching us is easy as a-b-c<br>
+                            WhatsApp, Telegram, SMS, Call or Email us and we'll schedule a demo as per your convenience</p>
                     </div>
                 </div>
             </div>
@@ -211,7 +215,9 @@
                 <div class="_cntnt mobileCont">
                     <div class="_hdngBox">
                         <h1><span>02</span>  Get Onboarded</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p>We are the only non-intrusive solution and do not need any api integration with your accounting software. Your data stays safe with you.<br> 
+                            <br>
+                            And the setup takes less time than what it would take for you to read this! After all, your time is valuable.</p>
                     </div>
                 </div>
             </div>
@@ -233,7 +239,7 @@
                 <div class="_cntnt webCont">
                     <div class="_hdngBox">
                         <h1><span>03</span> Start serving your customers</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p>Keep doing things as you were before, but better! No need to learn anything new to operate with RASEET. Your customers get the digital bills as they would get the printed ones. Just ask them to share their phone numbers - that's all you need.</p>
                     </div>
                 </div>
             </div>
@@ -314,26 +320,82 @@
     </section>
 
     <section class="ftrSMSec" id="contact">
-        <div class="container">           
+        <div class="container">                       
                     <div class="_cntntBox _joinCntnt d_f">
-                        <h1>Join <span class="raseet">RASEET</span> and explore</h1>
-                        <div class="whtsappIntpCont foot">
+                        <div class="contact-info">
+                            
+                            <div class="subFooter "> 
+                                <h1>Join <span class="raseet">RASEET</span> and explore</h1>                               
+                                <div class="_linkBx">                    
+                                    <ul class="_lnk_top">
+                                        <li><a href="javascript:;"><i class="fas fa-phone-alt"></i> &nbsp; +91-9999999999</a> </li>
+                                        <li><a href="javascript:;"><i class="fas fa-envelope"></i> &nbsp; hello@raseet.com</a> </li>
+                                        <li><a href="javascript:;"><i class="fas fa-map-marker-alt"></i> &nbsp; Delhi</a></li>
+                                        
+                                <!---  <li><a href="javascript:;">Why <span class="raseet">RASEET</span></a> </li>
+                                        <li><a href="javascript:;">How it works</a> </li>
+                                        <li><a href="javascript:;">FAQ</a></li>
+                                        <li><a href="javascript:;">Contact us</a></li>  -->
+                                    </ul>
+                                </div>
+                                <div class="_linkBx">
+                                    <ul class="_lnk _ftrSM d_f" >                        
+                                        <li><a style="text-decoration: none;" href="javascript:;"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a style="text-decoration: none;" href="javascript:;"><i class="fab fa-instagram"></i></a></li>
+                                        <li><a style="text-decoration: none;" href="javascript:;"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a style="text-decoration: none;" href="javascript:;"><i class="fab fa-youtube"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-form">
+                            <h1>Contact Us</h1>
+                            <div class="contact">
+                                <form action="/" method="post" id="contact-form-below">
+                                <div class="form-input">
+                                <div class="left">
+                                    <input type="text" placeholder="Name *" id="name" class="input" required>                            
+                                    <input type="number" placeholder="Mobile Number *" id="number" class="input" required>                    
+                                    <input type="email" placeholder="Email *" id="email" class="input" required>
+                                    <input type="text" placeholder="Address" id="address" class="input">                                   
+                                </div>                                    
+                                <div class="right">
+                                       <input type="text" placeholder="Subject" id="subject" class="input">
+                                       <textarea name="message" class="input" id="message"  placeholder="Message"></textarea>
+                                       
+                                </div>
+                                </div>
+                                <button type="submit" class="enter-down">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                        
+
+
+
+
+
+
+
+                        <!-- <div class="whtsappIntpCont foot">
                             <!-- <h3>
                                  <span>Enter your Whatsapp number</span> 
-                            </h3> -->
+                            </h3> 
                             <form class="_intptFrmCnt foot d_f">
                                 <div class="_intptFrm foot d_f">
                                     <div class="_inputBox foot d_f">
                                         <span><img src="images/whatsapp.svg" alt=""></span>
-                                        <input type="number" class="input" value="" placeholder="Enter your Whatsapp number">
+                                        <input type="number" class="input" id="foot-input" placeholder="Enter your Whatsapp number">
                                     </div>
-                                    <button type="submit" class="enter"> Enter </button>                                        
-                                </div>
-                                <p class="invalid-msg"></p>
-                                <h5>For any queries, you can write to us at <span><a href="#">hello@raseet.com</a></span> </h5>                              
+                                    <button type="submit" class="enter-down"> Enter </button>                                        
+                                </div> -->
+                                <!-- <p class="response-foot"><i class="fas fa-times"></i> &nbsp; Please enter valid mobile number.</p>
+                                <p class="success-foot"><i class="far fa-check-circle"></i> &nbsp; Thank You! We will contact you soon.</p>
+                                <p class="fail-foot"><i class="fas fa-times"></i> &nbsp; Something went wrong! Please Try again.</p> -->
+                                <!-- <h5>For any queries, you can write to us at <span><a href="#">hello@raseet.com</a></span> </h5>                               -->
                                 <!-- <h4 class="_emailID">Have an <span>Email ID?</span></h4> -->
                                 <!-- <br> -->
-                            </form>
+                            <!-- </form> -->
                         </div>
                     </div>                    
                 
@@ -342,33 +404,17 @@
     
 
     <footer>
-        <div class="container">
-            <div class="subFooter ">
-                <div class="_linkBx">
-                    <ul class="_lnk _ftrSM d_f" >                        
-                        <li><a style="text-decoration: none;" href="javascript:;"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a style="text-decoration: none;" href="javascript:;"><i class="fab fa-instagram"></i></a></li>
-                        <li><a style="text-decoration: none;" href="javascript:;"><i class="fab fa-twitter"></i></a></li>
-                        <li><a style="text-decoration: none;" href="javascript:;"><i class="fab fa-youtube"></i></a></li>
-                    </ul>
-                </div>
-                <div class="_linkBx">                    
-                    <ul class="_lnk">
-                        <li><a href="javascript:;">Why <span class="raseet">RASEET</span></a> </li>
-                        <li><a href="javascript:;">How it works</a> </li>
-                        <li><a href="javascript:;">FAQ</a></li>
-                        <li><a href="javascript:;">Contact us</a></li> 
-                    </ul>
-                </div>
+        <!-- <div class="container">
+            
                 <!-- <div class="_linkBx">                    
                     <ul class="_lnk support">
                         <li><a href="javascript:;">support@<span class="raseet">RASEET</span>.com</a></li>
                     </ul>
-                </div> -->
+                </div> 
                 
                 
             </div>            
-        </div>
+        </div> -->
         <div class="copyright">
             <p type="copyright">&copy;2021 <span class="raseet">RASEET</span> | All Rights Reserved </p>
         </div>

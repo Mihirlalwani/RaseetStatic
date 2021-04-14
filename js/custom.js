@@ -93,10 +93,67 @@ $(document).ready(function(){
   });
 
   const enterBtn=document.querySelector(".enter");
+  document.querySelector(".enter-down").addEventListener("click",function submitToAPI2(e){
+	e.preventDefault();
+	var URL = "https://pagcd7s9md.execute-api.ap-south-1.amazonaws.com/default/send-mail-website-input";
 
-  enterBtn.addEventListener("click",function submitToAPI(e) {
+	var Namere = /[A-Za-z]{1}[A-Za-z]/;
+     if (!Namere.test($("#name").val())) {
+              alert ("Name can not less than 2 char");
+             return;
+     }
+	 var mobilere = /[0-9]{10}/;
+         if (!mobilere.test($("#number").val())) {
+			   alert ("Please Enter 10 digit mobile no.");
+             return;
+         }
+		 if ($("#email-input").val()=="") {
+			     alert ("Please enter your email id");
+			     return;
+			 }
+	 var name = $("#name").val();
+	 var number = $("#number").val();
+	 var email = $("#email").val();
+	 var address = $("#address").val();
+	 var subject = $("#subject").val();
+	 var message = $("#message").val();
+
+	 var data = {
+	    name : name,
+		number : number,	   
+	    email : email,
+		address:address,
+		subject:subject,
+		message:message
+		 }
+
+		 $.ajax({
+			type: "POST",
+			url : "https://pagcd7s9md.execute-api.ap-south-1.amazonaws.com/default/send-mail-website-input",
+			dataType: "json",
+			headers:{"x-api-key":"9OvsRPph281TqJZsKRSMe2EmLn0BkY2688YP9XBj"},
+			crossDomain: "true",
+			contentType: "application/json; charset=utf-8",
+			data: JSON.stringify(data),
+	  
+			
+			success: function () {
+			  // clear form and show a success message
+			  alert("Successfull");
+			  document.getElementById("contact-form-below").reset();
+			  return;
+		  },
+			error: function () {
+			  // show an error message
+			  alert("Failure");
+			  return;
+			}});
+  });
+  enterBtn.addEventListener("click",submitToAPI);
+  
+  function submitToAPI(e) {
     e.preventDefault();
-	console.log("In Api");
+	// console.log("In Api");
     var URL = "https://pagcd7s9md.execute-api.ap-south-1.amazonaws.com/default/send-mail-website-input";
 
         //  var Namere = /[A-Za-z]{1}[A-Za-z]/;
@@ -105,33 +162,26 @@ $(document).ready(function(){
         //      return;
         //  }
          var mobilere = /[0-9]{10}/;
-         if (!mobilere.test($("#phone-input").val())) {
-             alert ("Please enter valid mobile number");
+         if (!mobilere.test($("#phone-input").val()) && !mobilere.test($("#foot-input").val())) {
+			 if(e.target.classList.contains("enter-down")){
+               document.querySelector(".response-foot").style.display="flex";
+			 setTimeout(() => {
+			    document.querySelector(".response-foot").style.display="none";
+			 }, 3000);} else{
+				document.querySelector(".response").style.display="flex";				
+				setTimeout(() => {
+				   document.querySelector(".response").style.display="none";
+				   }, 3000);
+
+			 }
              return;
          }
-        //  if ($("#email-input").val()=="") {
-        //      alert ("Please enter your email id");
-        //      return;
-        //  }
-
-        //  var reeamil = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,6})?$/;
-        //  if (!reeamil.test($("#email-input").val())) {
-        //      alert ("Please enter valid email address");
-        //      return;
-        //  }
-
-    // var name = $("#name-input").val();
+        
     var phone = $("#phone-input").val();
-    // var email = $("#email-input").val();
-    // var desc = $("#description-input").val();
+	if(e.target.classList.contains("enter-down")){phone=$("#foot-input").val();}
     var data = {
-    //    name : name,
-       phone : phone,
-	   
-	   
-    //    email : email,
-    //    desc : desc
-     };
+    phone : phone   
+    };
 
     $.ajax({
       type: "POST",
@@ -145,31 +195,38 @@ $(document).ready(function(){
       
       success: function () {
         // clear form and show a success message
-        alert("Successfull");
+        if(e.target.classList.contains("enter-down")){
+			
+			document.querySelector(".success-foot").style.display="flex";
+		  setTimeout(() => {
+			 document.querySelector(".success-foot").style.display="none";
+		  }, 3000);}
+		   else{
+			 document.querySelector(".success").style.display="flex";				
+			 setTimeout(() => {
+				document.querySelector(".success").style.display="none";
+				}, 3000);
         document.getElementById("contact-form").reset();
-    location.reload();
-      },
+    
+      }
+	},
       error: function () {
         // show an error message
-        alert("UnSuccessfull");
+        if(e.target.classList.contains("enter-down")){
+			
+			document.querySelector(".fail-foot").style.display="flex";
+		  setTimeout(() => {
+			 document.querySelector(".fail-foot").style.display="none";
+		  }, 3000);}
+		   else{
+			 document.querySelector(".fail").style.display="flex";				
+			 setTimeout(() => {
+				document.querySelector(".fail").style.display="none";
+				}, 3000);
+            
+         }
       }});
-  });
-  
- 
-//   function(e){
-// 	  e.preventDefault();
-// 	  const input=document.querySelector(".input").value;
-// 	  const invalidMsg=document.querySelector(".invalid-msg");
-// 	  if(input.length<10 || input.length>10){
-// 		invalidMsg.innerHTML="Please enter valid 10 digit number*";
-// 		console.log(invalidMsg);
-// 		  setTimeout(() => {
-// 			invalidMsg.innerHTML="";
-// 		  }, 2000); 
-// 	  }
-	  
-//   })
-
+  }
   
   window.addEventListener("scroll",function(){
 	if($(window).width()>1024){
