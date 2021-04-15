@@ -544,6 +544,7 @@
   header .subHdr ._logoBox img {
     height: 45px; 
     margin-bottom: 0;
+    margin-left: 24px;
     margin-top: 7.5px;}
     header .subHdr ._leftArea .menu-left li{
       margin-bottom: 0;
@@ -564,8 +565,8 @@
     flex-direction: row-reverse;
     margin-top: 10%; }
   header .subHdr ._rightArea .hmbrgerMenu {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 16px;
+    margin-right: 24px;
      }
     
   .topSldrSec {
@@ -730,9 +731,12 @@
           
         }
         .faqSec .faqsCntnt > li ._cntnt{
-          font-size: 17px;
+          font-size: 18px;
           color: #545454;
           font-weight: 600;
+        }
+        .faqSec .faqsCntnt > li ._hdng p{
+          font-size: 21px;
         }
         .slick-dots{
           margin-left: 5px;
