@@ -411,6 +411,7 @@ header {
         overflow: hidden;
         background-color: white;
         font-size: 17px;
+        
         margin-right: 15px; }
         .whtsappIntpCont ._intptFrmCnt ._intptFrm ._inputBox span img {
           min-width: 20px;
@@ -432,11 +433,12 @@ header {
             width: 1px;
             height: 50%; }
         .whtsappIntpCont ._intptFrmCnt ._intptFrm ._inputBox input {
-          width: 80%;
+          width: 100%;
           font-weight: 300;
           padding-left: 20px;
           font-size: 16px;
           border: 0;
+          font-family: "Poppins",sans-serif;
           background-color: transparent; }
       .whtsappIntpCont ._intptFrmCnt ._intptFrm button {
         min-width: 100px;
@@ -469,7 +471,7 @@ header {
     .response,.fail,.response-foot,.fail-foot{
       
       height:45px;
-      width: 60%;
+      width: 70%;
       background-color: #fae8e8;
       display: block;
       border: 1px solid rgb(255, 49, 49);
@@ -482,12 +484,12 @@ header {
       display: none;
     }
     .fail,.fail-foot{
-      width: 70%;
+      width: 75%;
       display: none;
     }
     .success,.success-foot{
       height:45px;
-      width: 65%;
+      width: 70%;
       background-color: rgb(233, 245, 233);
       display: block;
       border: 1px solid rgb(1, 102, 1);
@@ -920,7 +922,7 @@ header {
       /* border-bottom: 1px solid rgb(168, 168, 168);  */
       border: 1px solid rgb(168, 168, 168);
       background-color: #ffffff;
-      /* border-radius: 5px; */
+      border-radius: 5px;
       font-size: 1rem;
       font-family: 'Poppins', sans-serif;
       padding-left: 0.5rem;
@@ -944,7 +946,7 @@ header {
       
       /* border-bottom: 1px solid rgb(168, 168, 168);
       background-color: rgb(255, 255, 255); */
-      /* border-radius: 5px; */
+      border-radius: 5px;
       background-color: rgb(255, 255, 255);
       border: 1px solid rgb(168, 168, 168);
       font-size: 1rem;
@@ -960,7 +962,7 @@ header {
       background-color: rgb(255, 255, 255);
       /* border-bottom: 1px solid rgb(168, 168, 168); */
       border: 1px solid rgb(168, 168, 168);
-      /* border-radius: 5px; */
+      border-radius: 5px;
       padding: 0.5rem;
       font-family: 'Poppins', sans-serif;
       text-align: start;   
@@ -980,7 +982,7 @@ header {
       /* text-transform: uppercase; */
       background-color: #225E77;
       color: #FFFFFF;
-      /* border-radius: 5px; */
+      border-radius: 5px;
       border: 0;
       letter-spacing: 2px;
       cursor: pointer;
@@ -1066,7 +1068,7 @@ footer {
          
                 footer .copyright{
                   justify-content: center;
-                  background-color: #bebebe;
+                  background-color: #f0f0f0;
                   display: flex;
                   width: 100%;
                   position: absolute;

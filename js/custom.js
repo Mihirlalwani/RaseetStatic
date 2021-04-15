@@ -187,7 +187,7 @@ $(document).ready(function(){
       type: "POST",
       url : "https://pagcd7s9md.execute-api.ap-south-1.amazonaws.com/default/send-mail-website-input",
       dataType: "json",
-	  headers:{"x-api-key":"9OvsRPph281TqJZsKRSMe2EmLn0BkY2688YP9X"},
+	  headers:{"x-api-key":"9OvsRPph281TqJZsKRSMe2EmLn0BkY2688YP9XBj"},
       crossDomain: "true",
       contentType: "application/json; charset=utf-8",
       data: JSON.stringify(data),
@@ -237,7 +237,7 @@ $(document).ready(function(){
 	const sec3=document.getElementById("start-serving");
 	const vnav=document.querySelector(".vertical-nav");
 	
-	if(scroll>=sec1.offsetTop-(sec1.offsetHeight/2) && scroll<sec3.offsetTop+(sec3.offsetHeight/2)-70){
+	if(scroll>=sec1.offsetTop-90 && scroll<sec3.offsetTop-60){
 		$(".vertical-nav").show(10);
 	}
 	else{
