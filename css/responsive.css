@@ -657,7 +657,7 @@
 
   .hwitWrkSec {
     padding: 50px 0 0;
-    border-top: 1px solid #eee; }
+    border-top: 0px solid #eee; }
     .hwitWrkSec._webIntrfcSec {
       padding-top: 50px; }
       .hwitWrkSec._webIntrfcSec .container {
@@ -709,12 +709,15 @@
        }
        
         .hwitWrkSec ._cntnt ._hdngBox > p{
-          padding-left: 69px;
+          padding-left: 85px;
           padding-top: 20px;
-          color: black;
+          color: #545454;
           width: 600px;
           font-size: 21px;
           font-weight: 600;
+        }
+        .hwitWrkSec ._cntnt ._hdngBox h1 span{
+          margin-right: 22px;
         }
         .hwitWrkSec ._cntnt.mobileCont {
           margin-top: 10%;
@@ -727,7 +730,8 @@
           
         }
         .faqSec .faqsCntnt > li ._cntnt{
-          font-size: 18px;
+          font-size: 17px;
+          color: #545454;
           font-weight: 600;
         }
         .slick-dots{
