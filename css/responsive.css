@@ -673,6 +673,15 @@
       border-bottom: 1px solid #eee; }
     .hwitWrkSec ._cntnt ._hdngBox {
       margin-bottom: 70px; }
+      .hwitWrkSec ._cntnt ._hdngBox h1 span {
+        font-size: 23px;
+        background-color: #225E77;
+        border-radius: 100%;
+        margin-right: 22px;
+        color: white;
+        height: max-content;
+        padding: 14px;
+    }
       .hwitWrkSec ._cntnt ._hdngBox h1 {
         font-size: 32px; } 
         .hwitWrkSec ._imgCont.web img {
