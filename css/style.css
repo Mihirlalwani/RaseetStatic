@@ -650,7 +650,7 @@ header {
         width: 90%;
         margin-left: 50px; 
         justify-content: center;
-        margin-top: 13%;
+        margin-top: 3%;
       }
       /* .slick-slider {
         display: table; 
@@ -683,12 +683,12 @@ header {
           } */
 
       .hwitWrkSec ._imgCont.mobile img {
-        width: 95%;
+        width: 80%;
         margin-left: 0px;
-        margin-right: 10%; 
+        margin-right: 5%; 
         justify-content: center;
         float: right;
-        margin-bottom: -15%;}
+        margin-top: 18%;}
         .hwitWrkSec ._cntnt.knowCont {
           padding-left: 0%;
           padding-top: 20%;
@@ -912,24 +912,47 @@ header {
     
     .ftrSMSec ._cntntBox .contact-form .contact .form-input{
       display: flex;
-      margin-top: 20px;
+      margin-top: 30px;
+    }
+    .ftrSMSec ._cntntBox .contact-form .contact form .left .input-container,.ftrSMSec ._cntntBox .contact-form .contact form .right .input-container{
+      display: flex;
+      width: 100%;
+      margin-bottom: 15px;
+      border-radius: 20px;
+    }
+    .ftrSMSec ._cntntBox .contact-form .contact form .left .input-container .icon,.ftrSMSec ._cntntBox .contact-form .contact form .right .input-container .icon {
+      padding: 12px;
+      color: #225E77;
+      background: rgb(255, 254, 254);
+      border: 1px solid #225E77;
+      /* border-right: none; */
+      border-top-left-radius: 5px ;
+      border-bottom-left-radius: 5px;
+      min-width: 20px;
+      /* box-shadow: 0 0 2px #E76F51; */
+      text-align: center;
+      
+    }   
+    
+    .ftrSMSec ._cntntBox .contact-form .contact form .left .input-container .input-field,.ftrSMSec ._cntntBox .contact-form .contact form .right .input-container .input-field {
+      width: 100%;
+      padding: 10px;
+      font-family: 'Poppins', sans-serif;
+      border: 1px solid rgb(168, 168, 168);
+      border-left: none;
+      border-radius: 5px;
+      border-top-left-radius: 0px ;
+      border-bottom-left-radius: 0px;
     }
     
-    .ftrSMSec ._cntntBox .contact-form .contact form .left > input{
-      min-height: 40px;
-      width: 100%;
-      margin-top: 10px;
-      /* border: none; */
-      /* background-color: rgb(240, 240, 240);*/
-      /* border-bottom: 1px solid rgb(168, 168, 168);  */
-      border: 1px solid rgb(168, 168, 168);
-      background-color: #ffffff;
-      border-radius: 5px;
-      font-size: 1rem;
-      font-family: 'Poppins', sans-serif;
-      padding-left: 0.5rem;
+    .ftrSMSec ._cntntBox .contact-form .contact form .left .input-container .input-field:focus ,.ftrSMSec ._cntntBox .contact-form .contact form .right .input-container .input-field:focus {
+      border: 1px solid #225E77;
+      /* box-shadow: 0 0 2px #225E77; */
       
+      border-left: none;
+
     }
+    
     .ftrSMSec ._cntntBox .contact-form .contact form .center{
       display: block;
     }
@@ -938,37 +961,25 @@ header {
     }
     .ftrSMSec ._cntntBox .contact-form .contact form .right{
       margin-left: 20px;
-    }
-    
-    .ftrSMSec ._cntntBox .contact-form .contact form .right > input{
-      min-height: 40px;
-      width: 100%;
-      font-family: 'Poppins', sans-serif;
-      margin-top: 10px;
-      
-      /* border-bottom: 1px solid rgb(168, 168, 168);
-      background-color: rgb(255, 255, 255); */
-      border-radius: 5px;
-      background-color: rgb(255, 255, 255);
-      border: 1px solid rgb(168, 168, 168);
-      font-size: 1rem;
-      padding-left: 0.5rem;
-    }
-    
+    }   
+          
     .ftrSMSec ._cntntBox .contact-form .contact form textarea{
-      margin-top: 10px;
-      min-height: 140px; 
+      min-height: 155px; 
       width: 100%; 
-      font-size: 1rem;
-      /* border: none; */
+      font-size: 0.9rem;
       background-color: rgb(255, 255, 255);
-      /* border-bottom: 1px solid rgb(168, 168, 168); */
       border: 1px solid rgb(168, 168, 168);
       border-radius: 5px;
       padding: 0.5rem;
+      margin-bottom: 0;
       font-family: 'Poppins', sans-serif;
       text-align: start;   
       resize: none;
+    }
+    :focus {
+      border: 1px solid dodgerblue;
+      border-left: none;
+
     }
     .ftrSMSec ._cntntBox .contact-form .contact button{
       

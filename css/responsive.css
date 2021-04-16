@@ -54,7 +54,9 @@
   .topSldrSec .topSldrCont ._cntntBox h1{
     font-size: 28px;
   }
-
+  .hwitWrkSec ._cntnt ._hdngBox h1 span{
+    background-color: white;
+  }
   .hwitWrkSec ._imgCont.web img.img31.slick-slide {
     width: 400px !important;
     padding-top: 10px;
@@ -124,7 +126,9 @@
           height: 80%;
           margin: 0px;
           margin-left: 40px !important; }
-
+          .hwitWrkSec ._cntnt ._hdngBox h1 span{
+            background-color: white;
+          }
   .ftrSMSec ._cntntBox h1 {
     font-size: 32px; }
 
@@ -674,7 +678,7 @@
     .hwitWrkSec ._cntnt ._hdngBox {
       margin-bottom: 70px; }
       .hwitWrkSec ._cntnt ._hdngBox h1 span {
-        font-size: 23px;
+        font-size: 21px;
         background-color: #225E77;
         border-radius: 100%;
         margin-right: 22px;
@@ -683,7 +687,10 @@
         padding: 14px;
     }
       .hwitWrkSec ._cntnt ._hdngBox h1 {
-        font-size: 32px; } 
+        font-size:28px; } 
+        .hwitWrkSec ._imgCont.letUsKnow img{
+          margin-top: 0;
+        }
         .hwitWrkSec ._imgCont.web img {
           width: 75%;
           margin-left: 50px; 
@@ -702,14 +709,15 @@
               margin: 0px;
               margin-left: 75px !important; } 
           .hwitWrkSec ._imgCont.mobile img {
-            width: 99%;
-            margin-left: 0px;
-            margin-right: 2%;
-            margin-top: -7%;
-            margin-bottom: -13%; 
+            width: 80%;
+            margin: 10% auto;
+            margin-right: 9%; 
             justify-content: center;
             float: right;
             overflow:hidden;}
+            .hwitWrkSec ._imgCont.start-serving img{
+              margin-top: -5%;
+            }
       .hwitWrkSec ._cntnt.webCont {
         width: max-content;
         display: flex;
