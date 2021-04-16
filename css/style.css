@@ -947,11 +947,9 @@ header {
     
     .ftrSMSec ._cntntBox .contact-form .contact form .left .input-container .input-field:focus ,.ftrSMSec ._cntntBox .contact-form .contact form .right .input-container .input-field:focus {
       border: 1px solid #225E77;
-      /* box-shadow: 0 0 2px #225E77; */
-      
+      /* box-shadow: 0 0 2px #225E77;       */
       border-left: none;
-
-    }
+    } 
     
     .ftrSMSec ._cntntBox .contact-form .contact form .center{
       display: block;
@@ -976,11 +974,7 @@ header {
       text-align: start;   
       resize: none;
     }
-    :focus {
-      border: 1px solid dodgerblue;
-      border-left: none;
-
-    }
+    
     .ftrSMSec ._cntntBox .contact-form .contact button{
       
       margin: 30px auto 10px;

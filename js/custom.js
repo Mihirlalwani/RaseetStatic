@@ -237,7 +237,7 @@ $(document).ready(function(){
 	const sec3=document.getElementById("start-serving");
 	const vnav=document.querySelector(".vertical-nav");
 	
-	if(scroll>=sec1.offsetTop-90 && scroll<sec3.offsetTop-60){
+	if(scroll>=sec1.offsetTop-90 && scroll<sec3.offsetTop+60){
 		$(".vertical-nav").show(10);
 	}
 	else{
