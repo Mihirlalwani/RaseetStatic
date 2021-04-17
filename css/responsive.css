@@ -1,3 +1,328 @@
+@media (min-width:1601px) and (max-width:1920px){
+  .container{
+    width: 95vw;
+  }
+  header .subHdr{
+    margin-bottom: 1rem;
+  }
+  
+  ._hdngBox h1{
+    font-size: 3rem;
+  }
+  header .subHdr ._logoBox img{
+    height: 4.3rem;
+  }
+  header .subHdr ._rightArea .mainNav .menu{
+    margin-right: 3rem;
+  }
+  header .subHdr ._rightArea .mainNav .menu li{
+    margin-right: 3rem;
+  }
+  header .subHdr ._rightArea .mainNav .menu li a{
+    font-size: 1.6rem;
+  }
+  header .subHdr ._rightArea .langDropdown .activeBar{
+    font-size: 1.3rem;
+  }
+  .topSldrSec .topSldrCont{
+    margin-top: 1rem;
+  }
+  .topSldrSec .topSldrCont ._cntntBox, .topSldrSec .topSldrCont ._imgBox{
+    position: relative;
+    min-height: 78vh;
+    max-height: 100vw;
+    min-width: 50vw;
+    max-width: 60vw;
+  }
+  .topSldrSec .topSldrCont ._cntntBox{
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .topSldrSec .topSldrCont ._cntntBox h1{
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+
+  .whtsappIntpCont ._intptFrmCnt ._intptFrm ._inputBox{
+    /* font-size: 2.5rem; */
+    min-height: 4rem;
+    border-radius: 0.8rem;
+  }
+  .whtsappIntpCont ._intptFrmCnt ._intptFrm ._inputBox input{
+    font-size: 1.4em;
+  }
+  .whtsappIntpCont ._intptFrmCnt ._intptFrm button{
+    font-size: 1.6rem;
+    border-radius: 0.8rem;
+  }
+  .whtsappIntpCont ._intptFrmCnt ._intptFrm ._inputBox span img{
+    min-width: 2.5rem;
+    min-height: 5rem;
+  }
+  ._hdngBox h1{
+   padding-top: 3rem;
+  }
+  
+  .whySec .srvcBxCnt ._whyBoxCont{
+    width: 23%;
+    margin:2.5rem;
+    padding-top: 2.5rem;
+  }
+  .whySec .srvcBxCnt ._whyBoxCont h3{
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .whySec .srvcBxCnt ._whyBoxCont p{
+    font-size: 1.3rem;
+  }
+  .hwitWrkSec ._cntnt ._hdngBox h1 span{
+    display: none;
+  }
+  .hwitWrkSec ._cntnt ._hdngBox h1{
+    font-size: 2.1rem;
+    margin-bottom: 1rem;
+    color: #19485c;
+  }
+  .hwitWrkSec ._cntnt ._hdngBox > p{
+    padding: 0;
+    padding-right: 1rem;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+  }
+  .hwitWrkSec ._imgCont.letUsKnow img{
+    max-width: 100%;
+    margin-left: 0;
+    margin-top: 15%;
+    margin-bottom: 5%;
+  }
+  .hwitWrkSec ._cntnt.knowCont{
+    padding-top: 28%;
+  }
+  .hwitWrkSec ._imgCont.mobile img{
+    width: 92%;
+  }
+  .hwitWrkSec._intrfaceSec ._cntnt{
+    margin-left: 10%;
+    padding-right: 5%;
+    margin-top: 35%;
+  }
+  .hwitWrkSec ._imgCont.start-serving img{
+    margin-top: 4%;
+    width: 100%;
+  }
+  .hwitWrkSec ._cntnt.webCont{
+    padding-right: 10%;
+    padding-top: 30%;
+    margin-left: 9%;
+  }
+  .faqSec .faqsCntnt{
+    max-width: 80vw;
+  }
+  .faqSec .faqsCntnt > li ._hdng{
+    padding: 3rem;
+  }
+  .faqSec .faqsCntnt > li ._hdng p{
+    font-size: 2rem;
+    max-width: 100%;
+  }
+  .faqSec .faqsCntnt > li ._cntnt p{
+    font-size: 1.5rem;
+  }
+  .ftrSMSec ._cntntBox .contact-info .subFooter h1,.ftrSMSec ._cntntBox._joinCntnt h1{
+    font-size: 3rem;
+  }
+  .ftrSMSec ._cntntBox .contact-form .contact .form-input{
+    display: block;
+  }
+  .left,.right{width: 100%;}
+  .ftrSMSec ._cntntBox .contact-form{
+    padding: 4rem;
+  }
+  .ftrSMSec ._cntntBox .contact-form .contact form .left .input-container .input-field, .ftrSMSec ._cntntBox .contact-form .contact form .right .input-container .input-field{
+    font-size: 1.5rem;
+  }
+  .ftrSMSec ._cntntBox .contact-form .contact form .left .input-container, .ftrSMSec ._cntntBox .contact-form .contact form .right .input-container{
+    margin-bottom: 1.5rem;
+  }
+  .ftrSMSec ._cntntBox .contact-form .contact form .left .input-container .icon, .ftrSMSec ._cntntBox .contact-form .contact form .right .input-container .icon{
+    padding: 19px;
+  }
+  .ftrSMSec ._cntntBox .contact-info .subFooter ._linkBx ._lnk_top li i{
+    font-size: 1.8rem;
+  }
+  .ftrSMSec ._cntntBox .contact-info .subFooter ._linkBx ._lnk_top li a{
+    font-size: 1.5rem;
+  }
+  
+
+}
+
+@media (min-width:1367px) and (max-width:1600px){
+  .container{
+    width: 95vw;
+  }
+  header .subHdr{
+    margin-bottom: 0.5rem;
+  }
+  
+  ._hdngBox h1{
+    font-size: 3rem;
+  }
+  header .subHdr ._logoBox img{
+    height: 4.2rem;
+  }
+  header .subHdr ._rightArea .mainNav .menu{
+    margin-right: 3rem;
+  }
+  header .subHdr ._rightArea .mainNav .menu li{
+    margin-right: 3rem;
+  }
+  header .subHdr ._rightArea .mainNav .menu li a{
+    font-size: 1.4rem;
+  }
+  header .subHdr ._rightArea .langDropdown .activeBar{
+    font-size: 1.3rem;
+  }
+  .topSldrSec .topSldrCont{
+    margin-top: 1rem;
+  }
+  .topSldrSec .topSldrCont ._cntntBox, .topSldrSec .topSldrCont ._imgBox{
+    position: relative;
+    min-height: 75vh;
+    max-height: 100vw;
+    min-width: 50vw;
+    max-width: 40vw;
+  }
+  .topSldrSec .topSldrCont ._cntntBox{
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .topSldrSec .topSldrCont ._cntntBox h1{
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  .whtsappIntpCont ._intptFrmCnt ._intptFrm ._inputBox{
+    min-height: 3rem;
+    border-radius: 0.6rem;
+  }
+  .whtsappIntpCont ._intptFrmCnt ._intptFrm ._inputBox input{
+    font-size: 1.4em;
+  }
+  .whtsappIntpCont ._intptFrmCnt ._intptFrm button{
+    font-size: 1.4rem;
+    border-radius: 0.6rem;
+  }
+  .whtsappIntpCont ._intptFrmCnt ._intptFrm ._inputBox span img{
+    min-width: 2rem;
+    min-height: 4rem;
+  }
+  ._hdngBox h1{
+   padding-top: 2rem;
+  }
+  
+  .whySec .srvcBxCnt ._whyBoxCont{
+    width: 24%;
+    margin:2.2rem;
+    padding-top: 2.5rem;
+  }
+  .whySec .srvcBxCnt ._whyBoxCont h3{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .whySec .srvcBxCnt ._whyBoxCont p{
+    font-size: 1.1rem;
+  }
+  .hwitWrkSec ._cntnt ._hdngBox h1 span{
+    display: none;
+  }
+  .hwitWrkSec ._cntnt ._hdngBox h1{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #19485c;
+  }
+  .hwitWrkSec ._cntnt ._hdngBox > p{
+    padding: 0;
+    padding-right: 1rem;
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+  .hwitWrkSec ._imgCont.letUsKnow img{
+    max-width: 95%;
+    margin-left: 0;
+    margin-top: 15%;
+    margin-bottom: 5%;
+  }
+  .hwitWrkSec ._cntnt.knowCont{
+    padding-top: 28%;
+    padding-right: 10%;
+  }
+  .hwitWrkSec ._imgCont.mobile img{
+    width: 92%;
+  }
+  .hwitWrkSec._intrfaceSec ._cntnt{
+    margin-left: 10%;
+    padding-right: 5%;
+    margin-top: 35%;
+  }
+  .hwitWrkSec ._imgCont.start-serving img{
+    margin-top: 4%;
+    width: 100%;
+  }
+  .hwitWrkSec ._cntnt.webCont{
+    padding-right: 10%;
+    padding-top: 30%;
+    margin-left: 9%;
+  }
+  .faqSec .faqsCntnt{
+    max-width: 80vw;
+  }
+  .faqSec .faqsCntnt > li ._hdng{
+    padding: 2.2rem;
+  }
+  .faqSec .faqsCntnt > li ._hdng p{
+    font-size: 1.5rem;
+    max-width: 100%;
+  }
+  .faqSec .faqsCntnt > li ._cntnt p{
+    font-size: 1.2rem;
+  }
+  .ftrSMSec ._cntntBox .contact-info .subFooter h1,.ftrSMSec ._cntntBox._joinCntnt h1{
+    font-size: 2rem;
+  }
+  .ftrSMSec ._cntntBox .contact-form .contact .form-input{
+    display: block;
+  }
+  .left,.right{width: 100%;}
+  .ftrSMSec ._cntntBox .contact-form{
+    padding: 3rem;
+  }
+  .ftrSMSec ._cntntBox .contact-form .contact form .left .input-container .input-field, .ftrSMSec ._cntntBox .contact-form .contact form .right .input-container .input-field{
+    font-size: 1.1rem;
+  }
+  .ftrSMSec ._cntntBox .contact-form .contact form .left .input-container, .ftrSMSec ._cntntBox .contact-form .contact form .right .input-container{
+    margin-bottom: 1rem;
+  }
+  .ftrSMSec ._cntntBox .contact-form .contact form .left .input-container .icon, .ftrSMSec ._cntntBox .contact-form .contact form .right .input-container .icon{
+    padding: 14px;
+  }
+  .ftrSMSec ._cntntBox .contact-info .subFooter ._linkBx ._lnk_top li i{
+    font-size: 1.4rem;
+  }
+  .ftrSMSec ._cntntBox .contact-info .subFooter ._linkBx ._lnk_top li a{
+    font-size: 1.2rem;
+  }
+  
+
+}
+
+
+
+
+
+
 
 @media (hover :hover){
   .ftrSMSec ._cntntBox .whtsappIntpCont ._intptFrmCnt ._intptFrm button:hover {
@@ -763,6 +1088,15 @@
           .faqSec .faqsCntnt > li.active ._hdng{
             color: #E76F51;
           }
+        .ftrSMSec ._cntntBox .contact-form .contact .form-input{
+          display: block;
+        }
+        .ftrSMSec ._cntntBox .contact-form .contact form .left .input-container .input-field, .ftrSMSec ._cntntBox .contact-form .contact form .right .input-container .input-field{
+          font-size: 1rem;
+        }
+        .right,.left{
+          width: 100%;
+        }
         .ftrSMSec ._cntntBox._joinCntnt h5{
           font-size: 18px;
         }
@@ -771,6 +1105,10 @@
         }
         .ftrSMSec ._cntntBox .whtsappIntpCont{
           width: 86%;
+        }
+        .ftrSMSec ._cntntBox .contact-form .contact button{
+          width: 100%;
+          margin-top: 10%;
         }
       }
 
