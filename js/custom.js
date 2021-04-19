@@ -244,7 +244,7 @@ $(document).ready(function(){
 		$(".vertical-nav").hide(10);
 	}
 	
-		if(scroll>sec1.offsetTop-70 && scroll<sec1.offsetTop+(sec1.offsetHeight/2)){
+		if(scroll>sec1.offsetTop-100 && scroll<sec1.offsetTop+(sec1.offsetHeight/2)){
 			 navBtn[0].classList.add("active");
 			 setTimeout(() => {
 				navBtn[1].classList.remove("active");
@@ -254,14 +254,14 @@ $(document).ready(function(){
 			}, 50);
 			
 		}
-		else if(scroll>sec2.offsetTop-70 && scroll<sec2.offsetTop+(sec2.offsetHeight/2)){
+		else if(scroll>sec2.offsetTop-(sec2.offsetHeight)-80 && scroll<sec2.offsetTop+(sec2.offsetHeight/4)){
 			    navBtn[1].classList.add("active");
 				navBtn[0].classList.remove("active");
 				navBtn[2].classList.remove("active");
 				document.querySelector(".p1").style.display="none";
 				document.querySelector(".p2").style.display="block"; 
 		}
-		else if(scroll>sec3.offsetTop-70 && scroll<sec3.offsetTop+(sec3.offsetHeight/2)){
+		else if(scroll>sec3.offsetTop-(sec3.offsetHeight/2)-80 && scroll<sec3.offsetTop+(sec3.offsetHeight/2)){
 			setTimeout(() => {
 				navBtn[2].classList.add("active");
 				navBtn[0].classList.remove("active");
@@ -273,3 +273,16 @@ $(document).ready(function(){
 	}
 	
   });
+
+//   document.querySelectorAll(".input-field").addEventListener("focus",function(e){
+// 	console.log(e.target);
+//   })
+  function inputFocus(e){
+	const input=e.target.previousElementSibling;
+	input.style="color:#2482aa; border:2px solid #2482aa; border-right:none;"
+  }
+  function focusOut(e){
+	const input=e.target.previousElementSibling;
+	input.style=""
+  }
+  

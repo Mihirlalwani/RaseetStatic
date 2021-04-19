@@ -205,7 +205,7 @@ header {
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05); }
   header .subHdr {
     justify-content: space-between;
-    margin-top: 15px; }
+    margin-top: 0px; }
     header .subHdr > div {
       position: relative; }
       header .subHdr > div._leftArea {
@@ -213,11 +213,11 @@ header {
     header .subHdr ._logoBox {
       position: relative;
       min-width: 50px;
-      height: 50px;
-      margin-bottom:15px ;
+      height: 43px;
+      margin-bottom:0px ;
       }
       header .subHdr ._logoBox img {
-       height: 50px;
+       height: 45px;
        padding-bottom: 0px;
         }
         header .subHdr ._leftArea .menu-left{
@@ -299,7 +299,7 @@ header {
               display: flex;
               align-items: center;
               font-family: 'Poppins', sans-serif;
-              font-size: 17px;
+              font-size: 16px;
               height: 65px;
               letter-spacing: 0px;
               margin-top: 0px;
@@ -362,11 +362,11 @@ header {
       overflow: hidden;
       background-size: auto 100%;
       background-repeat: no-repeat;
-      background-position: center center; }
+      background-position: right right; }
       .topSldrSec .topSldrCont ._imgBox img {
         object-fit: cover;
-        width: 100%;
-        height: 100%; }
+        width: 90%;
+        height: 90%; }
     .topSldrSec .topSldrCont ._cntntBox, .topSldrSec .topSldrCont ._imgBox {
       position: relative;
       min-height: 500px;
@@ -378,7 +378,7 @@ header {
       .topSldrSec .topSldrCont ._cntntBox h1 {
         color:white;
         font-family: 'Poppins', sans-serif;
-        font-size: 35px;
+        font-size: 29px;
         line-height: 46px;
         
         margin-bottom: 35px; }
@@ -411,12 +411,12 @@ header {
         border-radius: 5px;
         overflow: hidden;
         background-color: white;
-        font-size: 17px;
+        font-size: 16px;
         
         margin-right: 15px; }
         .whtsappIntpCont ._intptFrmCnt ._intptFrm ._inputBox span img {
           min-width: 20px;
-          max-width: 30px;
+          max-width: 25px;
           height: 50px;
           display: flex;
           align-items: center;
@@ -443,9 +443,10 @@ header {
           background-color: transparent; }
       .whtsappIntpCont ._intptFrmCnt ._intptFrm button {
         min-width: 100px;
-        font-size: 18px;
+        font-size: 17px;
         font-weight: 500;
-        text-transform: uppercase;
+        font-family: "Poppins",sans-serif;
+        /* text-transform: uppercase; */
         background-color: #E76F51;
         color: #FFFFFF;
         border-radius: 5px;
@@ -512,7 +513,7 @@ header {
   font-family: 'Poppins', sans-serif; 
    color: #225E77; }
   ._hdngBox h1 {
-    font-size: 35px;
+    font-size: 33px;
     line-height: 40px; }
 
 .whySec {
@@ -526,28 +527,24 @@ header {
     justify-content: center;
     align-items: center; }
     .whySec .srvcBxCnt ._whyBoxCont {
-      position: relative;
-      width: 80%;
-      height: 350px;
-      margin-bottom: 50px;
-      width: 320px;
-      margin: 35px;
-      flex-direction: column;
-      text-align: center;
-      align-items: center;
-      padding: 30px;
-      padding-top: 60px;
-      /* border: 1px solid #e7927d; */
-      box-shadow:0 0 10px #dadada;
-      background-color: white;
-      border-radius: 5%;
+     position: relative;
+    height: 300px;
+    width: 295px;
+    margin: 35px;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 40px 20px 20px;
+    box-shadow: rgb(218 218 218) 0px 0px 10px;
+    background-color: white;
+    border-radius: 5%;
        }
       .whySec .srvcBxCnt ._whyBoxCont ._icon {
         position: relative;
         width: 100%;
         max-width: 100px;
         height: 100px;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
         display: flex;
         align-items: center;
         justify-content: center; }
@@ -555,6 +552,9 @@ header {
         color: #225E77;
         margin-bottom: 10px;
         font-size: 22px; }
+        .whySec .srvcBxCnt ._whyBoxCont p{
+          font-size: 15px;
+        }
 .vertical-nav{
   position:fixed;
   top:50vh;
@@ -585,7 +585,7 @@ header {
   margin-bottom: 0;
 }
 .vertical-nav .vnav li a{
-  font-size: 14px;
+  font-size: 15px;
   font-weight: bolder;
   align-self: center;
   margin: auto;
@@ -633,8 +633,8 @@ header {
     border-radius: 10px 10px 0 0;
     overflow: hidden; }
     .hwitWrkSec ._imgCont.letUsKnow img {
-      max-width: 90%;
-      margin-left: 50px; 
+      max-width: 80%;
+      margin-left: 10%; 
       justify-content: center;
       margin-top: 40px;
       margin-bottom: 20px;
@@ -647,10 +647,10 @@ header {
       margin-top: 50px;
       margin-bottom: 14%;}
       .hwitWrkSec ._imgCont.start-serving img {
-        width: 90%;
-        margin-left: 50px; 
+        width: 60%;
+        margin: auto;
         justify-content: center;
-        margin-top: 3%;
+        margin-top: 5%;
       }
       /* .slick-slider {
         display: table; 
@@ -707,10 +707,9 @@ header {
       .hwitWrkSec ._cntnt ._hdngBox h1 {
         font-size: 25px;
         padding-right: 0px;
-        color: black; 
+        color: #1e5369; 
       }
       .hwitWrkSec ._cntnt ._hdngBox > p{
-        padding-left: 69px;
         padding-right: 28px;
         padding-top: 20px;
         color: black;
@@ -723,6 +722,7 @@ header {
         color: white;
         height: max-content;
         padding: 14px;
+        display: none;
     }
       
       #get-onboard,#start-serving{
@@ -842,6 +842,7 @@ header {
      .ftrSMSec ._cntntBox .contact-info .subFooter h1{
         color: rgb(240, 240, 240);
         margin-top: 5%;
+        font-size: 34px;
      }
      .ftrSMSec ._cntntBox .contact-info .subFooter ._linkBx ._lnk_top{
        margin-top: 15%;
@@ -908,6 +909,7 @@ header {
       text-align: center;
       color: #225E77;
       margin-bottom: 10px;
+      font-size: 34px;
     }
     
     .ftrSMSec ._cntntBox .contact-form .contact .form-input{
@@ -922,12 +924,13 @@ header {
     }
     .ftrSMSec ._cntntBox .contact-form .contact form .left .input-container .icon,.ftrSMSec ._cntntBox .contact-form .contact form .right .input-container .icon {
       padding: 12px;
-      color: #225E77;
+      color: rgb(100, 100, 100);
       background: rgb(255, 254, 254);
-      border: 1px solid #225E77;
+      border: 1px solid rgb(100, 100, 100);
       /* border-right: none; */
       border-top-left-radius: 5px ;
       border-bottom-left-radius: 5px;
+      border-right: none;
       min-width: 20px;
       /* box-shadow: 0 0 2px #E76F51; */
       text-align: center;
@@ -938,7 +941,7 @@ header {
       width: 100%;
       padding: 10px;
       font-family: 'Poppins', sans-serif;
-      border: 1px solid rgb(168, 168, 168);
+      border: 1px solid rgb(100, 100, 100);
       border-left: none;
       border-radius: 5px;
       border-top-left-radius: 0px ;
@@ -946,9 +949,11 @@ header {
     }
     
     .ftrSMSec ._cntntBox .contact-form .contact form .left .input-container .input-field:focus ,.ftrSMSec ._cntntBox .contact-form .contact form .right .input-container .input-field:focus {
-      border: 1px solid #225E77;
+      border: 2px solid #2482aa;
       /* box-shadow: 0 0 2px #225E77;       */
       border-left: none;
+       
+
     } 
     
     .ftrSMSec ._cntntBox .contact-form .contact form .center{
