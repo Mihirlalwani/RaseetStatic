@@ -279,7 +279,7 @@ $(document).ready(function(){
 //   })
   function inputFocus(e){
 	const input=e.target.previousElementSibling;
-	input.style="color:#2482aa; border:2px solid #2482aa; border-right:none;"
+	input.style="color:#225E77; border:2px solid #225E77; border-right:none;"
   }
   function focusOut(e){
 	const input=e.target.previousElementSibling;

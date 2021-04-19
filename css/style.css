@@ -715,13 +715,13 @@ header {
         color: black;
       }
       .hwitWrkSec ._cntnt ._hdngBox h1 span {
-        font-size: 23px;
+        /* font-size: 23px;
         background-color: #225E77;
         border-radius: 100%;
         margin-right: 7px;
         color: white;
         height: max-content;
-        padding: 14px;
+        padding: 14px; */
         display: none;
     }
       
@@ -949,7 +949,7 @@ header {
     }
     
     .ftrSMSec ._cntntBox .contact-form .contact form .left .input-container .input-field:focus ,.ftrSMSec ._cntntBox .contact-form .contact form .right .input-container .input-field:focus {
-      border: 2px solid #2482aa;
+      border: 2px solid #225E77;
       /* box-shadow: 0 0 2px #225E77;       */
       border-left: none;
        

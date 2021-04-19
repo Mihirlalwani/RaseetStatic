@@ -858,10 +858,11 @@
     .hwitWrkSec ._cntnt ._hdngBox {
       margin-bottom: 70px; }
       .hwitWrkSec ._cntnt ._hdngBox h1 span {
-        font-size: 21px;
+        display:inline-block;
+        font-size: 23px;
         background-color: #225E77;
         border-radius: 100%;
-        margin-right: 22px;
+        margin-right: 7px;
         color: white;
         height: max-content;
         padding: 14px;
@@ -896,7 +897,7 @@
             float: right;
             overflow:hidden;}
             .hwitWrkSec ._imgCont.start-serving img{
-              margin-top: -5%;
+              margin-top: 0%;
             }
       .hwitWrkSec ._cntnt.webCont {
         width: max-content;
