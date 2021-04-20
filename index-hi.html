@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/slick.css"/>
     <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
     <link rel="stylesheet" href="css/style.css">
@@ -32,10 +33,10 @@
                             <img src="images/logo.png" alt="">                     
                         </a>
                     </div>
-                    <ul class="menu-left d_f">
+                    <!-- <ul class="menu-left d_f">
                         <li class="business_item"><a rel="relativeanchor" href="#" class="business"><img src="images/business.svg" alt="">Business</a></li> 
                         <li class="customer_item"><a rel="relativeanchor" href="#" class="customer"><img src="images/customer.svg" alt="">Customer</a></li>
-                    </ul>
+                    </ul> -->
                 </div>
                 <div class="_rightArea d_f">
                    <!--  <div class="top_strip d_f">
@@ -307,7 +308,81 @@
     </section>
 
     <section class="ftrSMSec" id="contact">
-        <div class="container">
+        <div class="container">                       
+            <div class="_cntntBox _joinCntnt d_f">
+                <div class="contact-info">
+                    
+                    <div class="subFooter "> 
+                        <h1>Join <span class="raseet">RASEET</span> and explore</h1>                               
+                        <div class="_linkBx">                    
+                            <ul class="_lnk_top">
+                                <li><a href="tel:9999999999"><i class="fas fa-phone-alt"></i> &nbsp; +91-9999999999</a> </li>
+                                <li><a href="mailto:hello@raseet.com"><i class="fas fa-envelope"></i> &nbsp; hello@raseet.com</a> </li>
+                                <li><a href="javascript:;"><i class="fas fa-map-marker-alt"></i> &nbsp; Delhi</a></li>
+                                
+                        <!---  <li><a href="javascript:;">Why <span class="raseet">RASEET</span></a> </li>
+                                <li><a href="javascript:;">How it works</a> </li>
+                                <li><a href="javascript:;">FAQ</a></li>
+                                <li><a href="javascript:;">Contact us</a></li>  -->
+                            </ul>
+                        </div>
+                        <div class="_linkBx">
+                            <ul class="_lnk _ftrSM d_f" >                        
+                                <li><a style="text-decoration: none;" href="javascript:;"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a style="text-decoration: none;" href="javascript:;"><i class="fab fa-instagram"></i></a></li>
+                                <li><a style="text-decoration: none;" href="javascript:;"><i class="fab fa-twitter"></i></a></li>
+                                <li><a style="text-decoration: none;" href="javascript:;"><i class="fab fa-youtube"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form ">
+                    <h1>Contact Us</h1>
+                    <div class="contact">
+                        <form action="/" method="post" id="contact-form-below">
+                        <div class="form-input">
+                        <div class="left">
+                            <div class="input-container">
+                                <i class="fa fa-user icon"></i>
+                                <input type="text" onfocus="inputFocus(event);" onfocusout="focusOut(event);" placeholder="Name *" id="name" class="input-field" required>
+                            </div>
+                            <div class="input-container">
+                                <i class="fas fa-phone-alt icon"></i>
+                                <input type="number" onfocus="inputFocus(event);" onfocusout="focusOut(event);" placeholder="Mobile Number *" id="number" class="input-field" required>
+                            </div>
+                            <div class="input-container">
+                                <i class="fas fa-envelope icon"></i>
+                                <input type="email" onfocus="inputFocus(event);" onfocusout="focusOut(event);" placeholder="Email *" id="email" class="input-field" required>
+                            </div>
+                            <div class="input-container">
+                                <i class="fa fa-location-arrow icon"></i>
+                                <input type="text" onfocus="inputFocus(event);" onfocusout="focusOut(event);" placeholder="Address" id="address" class="input-field">
+                            </div>                                                         
+                        </div>                                    
+                        <div class="right">
+                            <div class="input-container">
+                                <i class="fa fa-edit icon"></i>
+                                <input type="text" onfocus="inputFocus(event);" onfocusout="focusOut(event);" placeholder="Subject" id="subject" class="input-field">
+                            </div>
+                            <div class="input-container">
+                                <i class="fa fa-comment-dots icon"></i>
+                                <textarea name="message" onfocus="inputFocus(event);" onfocusout="focusOut(event);" class="input-field" id="message"  placeholder="Message"></textarea> 
+                            </div>
+                             
+                               
+                                                                     
+                        </div>
+                        </div>
+                        <button type="submit" class="enter-down">Submit</button>
+                        </form>
+                        <p class="response-foot"><i class="fas fa-times"></i> &nbsp; Please enter valid mobile number.</p>
+                        <p class="success-foot"><i class="far fa-check-circle"></i> &nbsp; Thank You! We will contact you soon.</p>
+                        <p class="fail-foot"><i class="fas fa-times"></i> &nbsp; Something went wrong! Please Try again.</p>
+                    </div>
+                </div>
+
+
+        
             <!-- <div class="col-lg-6 col-md-6">
                 <div class="row">
                     <div class="_cntntBox _anyQstnCont d_f">
@@ -341,13 +416,13 @@
                     </div>
                 </div> -->
             <!-- </div> -->                        
-                    <div class="_cntntBox _joinCntnt d_f">
+                    <!-- <div class="_cntntBox _joinCntnt d_f">
                         <h1><span class="raseet">RASEET</span> से जुड़ें और लाभान्वित हों</h1>
                         <div class="whtsappIntpCont">
                             <!-- <h3>
                                 
                                 <span>कृपया अपना Whatsapp नंबर प्रवेश करें</span>
-                            </h3> -->
+                            </h3> 
                             <form class="_intptFrmCnt d_f">
                                 <div class="_intptFrm d_f">
                                     <div class="_inputBox d_f">
@@ -363,13 +438,13 @@
                             </form>
                         </div>
                     </div>                    
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
 
     <footer>
-        <div class="container">
+        <!-- <div class="container">
             <div class="subFooter ">
                 <div class="_linkBx">
                     <ul class="_lnk _ftrSM d_f" >                        
@@ -391,11 +466,11 @@
                     <ul class="_lnk support">
                         <li><a href="javascript:;">support@<span class="raseet">RASEET</span>.com</a></li>
                     </ul>
-                </div> -->
+                </div> 
                 
                 
             </div>            
-        </div>
+        </div> -->
         <div class="copyright">
             <p type="copyright">&copy;2021 <span class="raseet">RASEET</span> | All Rights Reserved </p>
         </div>

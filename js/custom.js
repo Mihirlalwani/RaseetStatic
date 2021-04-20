@@ -308,14 +308,14 @@ $(document).ready(function(){
 			}, 50);
 			
 		}
-		else if(scroll>sec2.offsetTop-(sec2.offsetHeight)-80 && scroll<sec2.offsetTop+(sec2.offsetHeight/4)){
+		else if(scroll>sec2.offsetTop-(sec2.offsetHeight)-90 && scroll<sec2.offsetTop+(sec2.offsetHeight/4)){
 			    navBtn[1].classList.add("active");
 				navBtn[0].classList.remove("active");
 				navBtn[2].classList.remove("active");
 				document.querySelector(".p1").style.display="none";
 				document.querySelector(".p2").style.display="block"; 
 		}
-		else if(scroll>sec3.offsetTop-(sec3.offsetHeight/2)-80 && scroll<sec3.offsetTop+(sec3.offsetHeight/2)){
+		else if(scroll>sec3.offsetTop-(sec3.offsetHeight)-80 && scroll<sec3.offsetTop+(sec3.offsetHeight/2)){
 			setTimeout(() => {
 				navBtn[2].classList.add("active");
 				navBtn[0].classList.remove("active");
