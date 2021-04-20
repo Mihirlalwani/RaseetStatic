@@ -4,6 +4,10 @@
 @import url(fonts.css);
 @import url(owl.carousel.css);
 @import url(fontawesome/css/all.min.css);
+@font-face {
+  font-family: Gotham;
+  src: url('./fontawesome/webfonts/Gotham-Light.otf');
+}
 /* Social Media color */
 /* colors */
 /* Animation */
@@ -30,7 +34,7 @@ body {
   font-size: 16px;
   line-height: 26px;
   color: #545454;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   width: fit-content;
   position: absolute;
 }
@@ -298,8 +302,10 @@ header {
             header .subHdr ._rightArea .mainNav .menu li a {
               display: flex;
               align-items: center;
-              font-family: 'Poppins', sans-serif;
+              font-family: 'Montserrat', sans-serif;
               font-size: 16px;
+              font-weight: 500;
+              color: #555;
               height: 65px;
               letter-spacing: 0px;
               margin-top: 0px;
@@ -377,12 +383,17 @@ header {
       padding: 0 5%; }
       .topSldrSec .topSldrCont ._cntntBox h1 {
         color:white;
-        font-family: 'Poppins', sans-serif;
-        font-size: 29px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 34px;
         line-height: 46px;
         
         margin-bottom: 35px; }
-       
+        .topSldrSec .topSldrCont ._cntntBox h1 span{
+          font-weight: 800;
+          color: #E76F51;
+          text-shadow: 1px 1px  #000;
+          
+        }
 
 .whtsappIntpCont {
   position: relative;
@@ -485,13 +496,15 @@ header {
       color: rgb(196, 35, 35);
       display: none;
     }
+    .response-foot{width: 90%;}
     .fail,.fail-foot{
-      width: 75%;
+      width: 70%;
       display: none;
     }
+    .fail-foot{width: 100%;}
     .success,.success-foot{
       height:45px;
-      width: 70%;
+      width: 80%;
       background-color: rgb(233, 245, 233);
       display: block;
       border: 1px solid rgb(1, 102, 1);
@@ -502,23 +515,24 @@ header {
       font-size: large;
       color: rgb(3, 117, 3);
       display: none;
-     
-      
+          
     }
+    .success-foot{width: 100%;}
 
 ._hdngBox {
   position: relative;
   text-align: center;
   margin-bottom: 40px;
-  font-family: 'Poppins', sans-serif; 
+  font-family: 'Montserrat', sans-serif; 
    color: #225E77; }
   ._hdngBox h1 {
     font-size: 33px;
-    line-height: 40px; }
+    line-height: 40px; 
+    font-weight: 500;}
 
 .whySec {
   padding: 40px 0;
-  font-family: 'Poppins', sans-serif; 
+  font-family: 'Montserrat', sans-serif; 
   background-color: rgba(218,218,218,0.2);
  }
   .whySec .srvcBxCnt {
@@ -551,7 +565,8 @@ header {
       .whySec .srvcBxCnt ._whyBoxCont h3 {
         color: #225E77;
         margin-bottom: 10px;
-        font-size: 22px; }
+        font-size: 22px;
+        font-weight: 500; }
         .whySec .srvcBxCnt ._whyBoxCont p{
           font-size: 15px;
         }
@@ -793,7 +808,7 @@ header {
         
         .faqSec .faqsCntnt > li ._hdng p {
           font-size: 18px;
-          font-weight: 700;
+          font-weight: 500;
           max-width: 80%;
           margin-bottom: 0; 
           margin-left: 50px;}
@@ -842,7 +857,8 @@ header {
      .ftrSMSec ._cntntBox .contact-info .subFooter h1{
         color: rgb(240, 240, 240);
         margin-top: 5%;
-        font-size: 34px;
+        font-size: 33px;
+        font-weight: 500;
      }
      .ftrSMSec ._cntntBox .contact-info .subFooter ._linkBx ._lnk_top{
        margin-top: 15%;
@@ -909,7 +925,8 @@ header {
       text-align: center;
       color: #225E77;
       margin-bottom: 10px;
-      font-size: 34px;
+      font-size: 33px;
+      font-weight: 500;
     }
     
     .ftrSMSec ._cntntBox .contact-form .contact .form-input{
@@ -924,9 +941,9 @@ header {
     }
     .ftrSMSec ._cntntBox .contact-form .contact form .left .input-container .icon,.ftrSMSec ._cntntBox .contact-form .contact form .right .input-container .icon {
       padding: 12px;
-      color: rgb(100, 100, 100);
-      background: rgb(255, 254, 254);
-      border: 1px solid rgb(100, 100, 100);
+      color: rgb(170, 170, 170);
+      background: rgb(240, 240, 240);
+      border: none;
       /* border-right: none; */
       border-top-left-radius: 5px ;
       border-bottom-left-radius: 5px;
@@ -940,16 +957,17 @@ header {
     .ftrSMSec ._cntntBox .contact-form .contact form .left .input-container .input-field,.ftrSMSec ._cntntBox .contact-form .contact form .right .input-container .input-field {
       width: 100%;
       padding: 10px;
-      font-family: 'Poppins', sans-serif;
-      border: 1px solid rgb(100, 100, 100);
+      font-family: 'Montserrat', sans-serif;
+      border: 0px solid rgb(100, 100, 100);
       border-left: none;
+      background-color: rgb(240, 240, 240);
       border-radius: 5px;
       border-top-left-radius: 0px ;
       border-bottom-left-radius: 0px;
     }
     
     .ftrSMSec ._cntntBox .contact-form .contact form .left .input-container .input-field:focus ,.ftrSMSec ._cntntBox .contact-form .contact form .right .input-container .input-field:focus {
-      border: 2px solid #225E77;
+      border: 1px solid #225E77;
       /* box-shadow: 0 0 2px #225E77;       */
       border-left: none;
        
@@ -967,7 +985,7 @@ header {
     }   
           
     .ftrSMSec ._cntntBox .contact-form .contact form textarea{
-      min-height: 155px; 
+      min-height: 150px; 
       width: 100%; 
       font-size: 0.9rem;
       background-color: rgb(255, 255, 255);
@@ -975,7 +993,7 @@ header {
       border-radius: 5px;
       padding: 0.5rem;
       margin-bottom: 0;
-      font-family: 'Poppins', sans-serif;
+      font-family: 'Montserrat', sans-serif;
       text-align: start;   
       resize: none;
     }
@@ -985,14 +1003,14 @@ header {
       margin: 30px auto 10px;
       display: flex;
       align-items: center;
-      min-height: 40px;
-      width: 50%;
+      min-height: 50px;
+      width: 100%;
       justify-content: center;
-      font-size: 18px;
+      font-size: 17px;
       font-weight: 500;
-      font-family: "Poppins",sans-serif;
+      font-family: "Montserrat",sans-serif;
       /* text-transform: uppercase; */
-      background-color: #225E77;
+      background-color: #E76F51;
       color: #FFFFFF;
       border-radius: 5px;
       border: 0;

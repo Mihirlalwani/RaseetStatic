@@ -99,16 +99,49 @@ $(document).ready(function(){
 
 	var Namere = /[A-Za-z]{1}[A-Za-z]/;
      if (!Namere.test($("#name").val())) {
-              alert ("Name can not less than 2 char");
+		if(e.target.classList.contains("enter-down")){
+			document.querySelector(".response-foot").innerHTML="<i class='fas fa-times'></i> &nbsp; Name less than 2 characters"
+			document.querySelector(".response-foot").style.display="flex";
+		  setTimeout(() => {
+			 document.querySelector(".response-foot").style.display="none";
+		  }, 3000);} else{
+			 document.querySelector(".response").style.display="flex";				
+			 setTimeout(() => {
+				document.querySelector(".response").style.display="none";
+				}, 3000);
+
+		  }
              return;
      }
 	 var mobilere = /[0-9]{10}/;
          if (!mobilere.test($("#number").val())) {
-			   alert ("Please Enter 10 digit mobile no.");
+			if(e.target.classList.contains("enter-down")){
+				document.querySelector(".response-foot").innerHTML="<i class='fas fa-times'></i> &nbsp; Please Enter Valid Mobile No.";
+				document.querySelector(".response-foot").style.display="flex";
+			  setTimeout(() => {
+				 document.querySelector(".response-foot").style.display="none";
+			  }, 3000);} else{
+				 document.querySelector(".response").style.display="flex";				
+				 setTimeout(() => {
+					document.querySelector(".response").style.display="none";
+					}, 3000);
+	
+			  }
              return;
          }
-		 if ($("#email-input").val()=="") {
-			     alert ("Please enter your email id");
+		 if ($("#email").val()=="") {
+			if(e.target.classList.contains("enter-down")){
+				document.querySelector(".response-foot").innerHTML="<i class='fas fa-times'></i> &nbsp; Please enter your Email";
+				document.querySelector(".response-foot").style.display="flex";
+			  setTimeout(() => {
+				 document.querySelector(".response-foot").style.display="none";
+			  }, 3000);} else{
+				 document.querySelector(".response").style.display="flex";				
+				 setTimeout(() => {
+					document.querySelector(".response").style.display="none";
+					}, 3000);
+	
+			  }
 			     return;
 			 }
 	 var name = $("#name").val();
@@ -138,14 +171,35 @@ $(document).ready(function(){
 	  
 			
 			success: function () {
-			  // clear form and show a success message
-			  alert("Successfull");
-			  document.getElementById("contact-form-below").reset();
+				if(e.target.classList.contains("enter-down")){
+			
+					document.querySelector(".success-foot").style.display="flex";
+				  setTimeout(() => {
+					 document.querySelector(".success-foot").style.display="none";
+				  }, 3000);}
+				   else{
+					 document.querySelector(".success").style.display="flex";				
+					 setTimeout(() => {
+						document.querySelector(".success").style.display="none";
+						}, 3000);}
+				document.getElementById("contact-form-below").reset();
 			  return;
 		  },
 			error: function () {
 			  // show an error message
-			  alert("Failure");
+			  if(e.target.classList.contains("enter-down")){
+			
+				document.querySelector(".fail-foot").style.display="flex";
+			  setTimeout(() => {
+				 document.querySelector(".fail-foot").style.display="none";
+			  }, 3000);}
+			   else{
+				 document.querySelector(".fail").style.display="flex";				
+				 setTimeout(() => {
+					document.querySelector(".fail").style.display="none";
+					}, 3000);
+				
+			 }
 			  return;
 			}});
   });
@@ -279,7 +333,7 @@ $(document).ready(function(){
 //   })
   function inputFocus(e){
 	const input=e.target.previousElementSibling;
-	input.style="color:#225E77; border:2px solid #225E77; border-right:none;"
+	input.style="color:#225E77; border:1px solid #225E77; border-right:none;"
   }
   function focusOut(e){
 	const input=e.target.previousElementSibling;
