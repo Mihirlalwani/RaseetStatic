@@ -470,6 +470,9 @@ header {
           background: #d84824;
           color:white;
           box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05); }
+          .whtsappIntpCont ._intptFrmCnt ._intptFrm button .load{
+            display: none;
+          }
     .whtsappIntpCont ._intptFrmCnt ._emailID {
       margin-top: 30px;
       text-decoration: underline;
