@@ -93,55 +93,47 @@ $(document).ready(function(){
   });
 
   const enterBtn=document.querySelector(".enter");
-  document.querySelector(".enter-down").addEventListener("click",function submitToAPI2(e){
+document.querySelector(".enter-down").addEventListener("click",function submitToAPI2(e){
 	e.preventDefault();
 	var URL = "https://pagcd7s9md.execute-api.ap-south-1.amazonaws.com/default/send-mail-website-input";
 
+	document.querySelector(".loadContact").style.display="inline-block";
 	var Namere = /[A-Za-z]{1}[A-Za-z]/;
      if (!Namere.test($("#name").val())) {
-		if(e.target.classList.contains("enter-down")){
+		  setTimeout(() => {
+			document.querySelector(".loadContact").style.display="none";
 			document.querySelector(".response-foot").innerHTML="<i class='fas fa-times'></i> &nbsp; Name less than 2 characters"
 			document.querySelector(".response-foot").style.display="flex";
+		  }, 1000);
+			
 		  setTimeout(() => {
 			 document.querySelector(".response-foot").style.display="none";
-		  }, 3000);} else{
-			 document.querySelector(".response").style.display="flex";				
-			 setTimeout(() => {
-				document.querySelector(".response").style.display="none";
-				}, 3000);
-
-		  }
+		  }, 3000);
              return;
      }
 	 var mobilere = /[0-9]{10}/;
          if (!mobilere.test($("#number").val())) {
-			if(e.target.classList.contains("enter-down")){
+			  setTimeout(() => {
+				document.querySelector(".loadContact").style.display="none";
 				document.querySelector(".response-foot").innerHTML="<i class='fas fa-times'></i> &nbsp; Please Enter Valid Mobile No.";
-				document.querySelector(".response-foot").style.display="flex";
+			    document.querySelector(".response-foot").style.display="flex";
+			  }, 1000);
+			  
 			  setTimeout(() => {
 				 document.querySelector(".response-foot").style.display="none";
-			  }, 3000);} else{
-				 document.querySelector(".response").style.display="flex";				
-				 setTimeout(() => {
-					document.querySelector(".response").style.display="none";
-					}, 3000);
-	
-			  }
-             return;
+			  }, 3000);	
+		       return;
          }
 		 if ($("#email").val()=="") {
-			if(e.target.classList.contains("enter-down")){
+			setTimeout(() => {
+				document.querySelector(".loadContact").style.display="none";
 				document.querySelector(".response-foot").innerHTML="<i class='fas fa-times'></i> &nbsp; Please enter your Email";
 				document.querySelector(".response-foot").style.display="flex";
+			  }, 1000);
+				
 			  setTimeout(() => {
 				 document.querySelector(".response-foot").style.display="none";
-			  }, 3000);} else{
-				 document.querySelector(".response").style.display="flex";				
-				 setTimeout(() => {
-					document.querySelector(".response").style.display="none";
-					}, 3000);
-	
-			  }
+			  }, 3000);
 			     return;
 			 }
 	 var name = $("#name").val();
@@ -171,35 +163,28 @@ $(document).ready(function(){
 	  
 			
 			success: function () {
-				if(e.target.classList.contains("enter-down")){
-			
-					document.querySelector(".success-foot").style.display="flex";
-				  setTimeout(() => {
+
+				setTimeout(() => {
+					document.querySelector(".loadContact").style.display="none"; 
+				    document.querySelector(".success-foot").style.display="flex";
+				}, 1000);
+				
+				setTimeout(() => {
 					 document.querySelector(".success-foot").style.display="none";
-				  }, 3000);}
-				   else{
-					 document.querySelector(".success").style.display="flex";				
-					 setTimeout(() => {
-						document.querySelector(".success").style.display="none";
-						}, 3000);}
+				  }, 3000);
+				   
 				document.getElementById("contact-form-below").reset();
 			  return;
 		  },
 			error: function () {
 			  // show an error message
-			  if(e.target.classList.contains("enter-down")){
-			
+			  setTimeout(() => {
+				document.querySelector(".loadContact").style.display="none"; 
 				document.querySelector(".fail-foot").style.display="flex";
+			  }, 1000);			  
 			  setTimeout(() => {
 				 document.querySelector(".fail-foot").style.display="none";
-			  }, 3000);}
-			   else{
-				 document.querySelector(".fail").style.display="flex";				
-				 setTimeout(() => {
-					document.querySelector(".fail").style.display="none";
-					}, 3000);
-				
-			 }
+			  }, 3000);
 			  return;
 			}});
   });
@@ -210,11 +195,7 @@ $(document).ready(function(){
 	// console.log("In Api");
     var URL = "https://pagcd7s9md.execute-api.ap-south-1.amazonaws.com/default/send-mail-website-input";
 
-        //  var Namere = /[A-Za-z]{1}[A-Za-z]/;
-        //  if (!Namere.test($("#name-input").val())) {
-        //               alert ("Name can not less than 2 char");
-        //      return;
-        //  }
+        
 		document.querySelector(".load").style.display="inline-block";
          var mobilere = /[0-9]{10}/;
          if (!mobilere.test($("#phone-input").val()) && !mobilere.test($("#foot-input").val())) {
@@ -255,13 +236,7 @@ $(document).ready(function(){
       
       success: function () {
         // clear form and show a success message
-        if(e.target.classList.contains("enter-down")){
-			
-			document.querySelector(".success-foot").style.display="flex";
-		  setTimeout(() => {
-			 document.querySelector(".success-foot").style.display="none";
-		  }, 3000);}
-		   else{
+        
 			document.querySelector(".load").style.display="none";  
 			 document.querySelector(".success").style.display="flex";				
 			 setTimeout(() => {
@@ -269,23 +244,17 @@ $(document).ready(function(){
 				}, 3000);
         document.getElementById("contact-form").reset();
     
-      }
+      
 	},
       error: function () {
-        // show an error message
-        if(e.target.classList.contains("enter-down")){
-			
-			document.querySelector(".fail-foot").style.display="flex";
-		  setTimeout(() => {
-			 document.querySelector(".fail-foot").style.display="none";
-		  }, 3000);}
-		   else{
+        // show an error message  
+			 document.querySelector(".load").style.display="none";       
 			 document.querySelector(".fail").style.display="flex";				
 			 setTimeout(() => {
 				document.querySelector(".fail").style.display="none";
 				}, 3000);
             
-         }
+         
       }});
   }
   
@@ -315,7 +284,7 @@ $(document).ready(function(){
 				}, 50);
 				
 			}
-			else if(scroll>sec2.offsetTop-(sec2.offsetHeight)-200 && scroll<sec2.offsetTop+(sec2.offsetHeight/3)){
+			else if(scroll>sec2.offsetTop-(sec2.offsetHeight)-150 && scroll<sec2.offsetTop+(sec2.offsetHeight/3)){
 					navBtn[1].classList.add("active");
 					navBtn[0].classList.remove("active");
 					navBtn[2].classList.remove("active");
@@ -349,14 +318,14 @@ $(document).ready(function(){
 				}, 50);
 				
 			}
-			else if(scroll>=sec2.offsetTop-(2*sec2.offsetHeight)-200 && scroll<sec2.offsetTop+(sec2.offsetHeight/8)){
+			else if(scroll>=sec2.offsetTop-(2*sec2.offsetHeight)-200 && scroll<sec2.offsetTop-(sec2.offsetHeight/10)){
 					navBtn[1].classList.add("active");
 					navBtn[0].classList.remove("active");
 					navBtn[2].classList.remove("active");
 					document.querySelector(".p1").style.display="none";
 					document.querySelector(".p2").style.display="block"; 
 			}
-			else if(scroll>sec3.offsetTop-(sec3.offsetHeight)-80 && scroll<sec3.offsetTop+(sec3.offsetHeight/2)){
+			else if(scroll>sec3.offsetTop-(sec3.offsetHeight)-200 && scroll<sec3.offsetTop+(sec3.offsetHeight/2)){
 				setTimeout(() => {
 					navBtn[2].classList.add("active");
 					navBtn[0].classList.remove("active");

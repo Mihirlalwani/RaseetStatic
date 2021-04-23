@@ -391,7 +391,7 @@ header {
         .topSldrSec .topSldrCont ._cntntBox h1 span{
           font-weight: 800;
           color: #E76F51;
-          text-shadow: 0px 0px  #000;
+          /* text-shadow: 0px 0px  #fff; */
           
         }
 
@@ -470,7 +470,7 @@ header {
           background: #d84824;
           color:white;
           box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05); }
-          .whtsappIntpCont ._intptFrmCnt ._intptFrm button .load{
+          .whtsappIntpCont ._intptFrmCnt ._intptFrm button .load,.loadContact{
             display: none;
           }
     .whtsappIntpCont ._intptFrmCnt ._emailID {
