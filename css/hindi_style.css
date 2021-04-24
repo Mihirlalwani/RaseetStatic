@@ -1,7 +1,27 @@
 body{
-    font-family: 'Rajdhani', sans-serif;}
+    font-family: 'Mukta', sans-serif;}
 
 .topSldrSec .topSldrCont ._cntntBox h1{
-    font-size: 35px;
-    font-family: 'Rajdhani', sans-serif;
+    font-size: 34px;
+    font-family: 'Mukta', sans-serif;
+    line-height: 48px;
+    letter-spacing: 0px;
+    font-weight: 500;
+}
+.topSldrSec .topSldrCont ._cntntBox h1 span{
+    font-weight: 600;
+}
+.whtsappIntpCont ._intptFrmCnt ._intptFrm ._inputBox input,
+.hwitWrkSec ._cntnt ._hdngBox > p,
+._hdngBox h1,
+.whySec .srvcBxCnt ._whyBoxCont h3{
+    font-family: 'Mukta', sans-serif;
+}
+.whatsapp{
+    margin-bottom: 2px;
+}
+
+.whySec .srvcBxCnt ._whyBoxCont p{
+    font-family: 'Mukta', sans-serif;
+    font-size: 17px;
 }

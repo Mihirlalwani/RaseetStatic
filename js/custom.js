@@ -264,7 +264,12 @@ document.querySelector(".enter-down").addEventListener("click",function submitTo
 	const sec1=document.getElementById("howItWorks");
 	const sec2=document.getElementById("get-onboard");
 	const sec3=document.getElementById("start-serving");
+	const whysec=document.getElementById("whySec");
 	const vnav=document.querySelector(".vertical-nav");
+	if(scroll>whysec.offsetTop){
+		document.querySelector(".goTop").style.display="block";
+	}
+	else{document.querySelector(".goTop").style.display="none";}
 	if($(window).width()>1024 && $(window).width()<1400){
 	
 		if(scroll>=sec1.offsetTop-200 && scroll<sec3.offsetTop+60){
@@ -302,7 +307,7 @@ document.querySelector(".enter-down").addEventListener("click",function submitTo
 			}
 	}
 	else if($(window).width()>1400){
-			if(scroll>=sec1.offsetTop-300 && scroll<sec3.offsetTop){
+			if(scroll>=sec1.offsetTop-300 && scroll<sec3.offsetTop-80){
 				$(".vertical-nav").show(10);
 			}
 			else{

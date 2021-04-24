@@ -199,6 +199,20 @@ section, footer, header {
   letter-spacing: 2px;
   margin-left: 4px;
 }
+.goTop{
+  position: fixed;
+  left: 2%;
+  bottom: 5%;
+  z-index: 50;
+  font-size: 1.4rem;
+  padding: 0.4rem 0.7rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #E76F51;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
 header {
   width: 100%;
   position: fixed;
@@ -390,7 +404,10 @@ header {
         margin-bottom: 35px; }
         .topSldrSec .topSldrCont ._cntntBox h1 span{
           font-weight: 800;
-          color: #E76F51;
+          color: #fff;
+          text-decoration: underline;
+          /* background-color: white; */
+        
           /* text-shadow: 0px 0px  #fff; */
           
         }
@@ -486,28 +503,29 @@ header {
         color: #E76F51; }
     .response,.fail,.response-foot,.fail-foot{
       
-      height:45px;
-      width: 70%;
+      height:30px;
+      font-size: 14px;
+      width: 60%;
       background-color: #fae8e8;
       display: block;
       border: 1px solid rgb(255, 49, 49);
       border-radius: 7px;
       display: flex;
       justify-content: center;
-      align-items:center ;
-      font-size: large;
+      align-items:center ;      
       color: rgb(196, 35, 35);
       display: none;
     }
-    .response-foot{width: 90%;}
+    .response-foot{width: 60%;}
     .fail,.fail-foot{
       width: 70%;
       display: none;
     }
-    .fail-foot{width: 100%;}
+    .fail-foot{width: 80%;
+    align-self: center;}
     .success,.success-foot{
-      height:45px;
-      width: 80%;
+      height:30px;     
+      width: 60%;
       background-color: rgb(233, 245, 233);
       display: block;
       border: 1px solid rgb(1, 102, 1);
@@ -515,7 +533,7 @@ header {
       display: flex;
       justify-content: center;
       align-items:center ;
-      font-size: large;
+      font-size: 14px;
       color: rgb(3, 117, 3);
       display: none;
           
