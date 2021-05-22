@@ -1103,9 +1103,10 @@ footer {
    margin: 2rem auto 2rem ;
    display: flex;
  }
- footer .subFooter hr{
-   width: 10rem;
+ footer .subFooter .footerLeft{
+   display: contents;
  }
+ .blogLeft{display: none;}
   footer .subFooter .footerNav img{
     max-height: 3.5em;
   }

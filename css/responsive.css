@@ -972,8 +972,12 @@
           margin-top: 10%;
         }
         footer .subFooter{
-          flex-direction:column;
-          display: block;          
+          flex-direction:row-reverse;
+          /* display: block;           */
+        }
+        footer .subFooter .footerLeft{
+          display: flex;
+          flex-direction: column;
         }
         footer .subFooter .footerItem{
           margin-top: 2rem;
@@ -987,9 +991,24 @@
           font-size: 1.1rem;
           margin: auto;
         }
+        footer .subFooter .footerNav img{
+          padding: auto;
+          margin: auto;
+        }
+        footer .subFooter .blogLeft{
+          display: flex;
+          flex-direction: column;
+          margin-left: 62px;
+          margin-top: 41px;
+        }
+        .blogRight{
+          display: none;
+        }
+        
         footer .subFooter .footerNav p{
-          padding-right: 15rem;
+          padding: 2rem 4rem;
           font-size: 1.1rem;
+          /* text-align: center; */
         }
 
       }
