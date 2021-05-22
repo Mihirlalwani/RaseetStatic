@@ -36,7 +36,10 @@ body {
   color: #545454;
   font-family: 'Montserrat', sans-serif;
   width: fit-content;
-  position: absolute;
+  position:relative;
+}
+html{
+  position:-webkit-sticky;
 }
 
 body.noScroll {
@@ -113,7 +116,7 @@ h6 {
   font-size: 16px; }
 html,body{
   overflow-x:hidden ;
-  overflow: visible;
+  /* overflow: visible; */
   
 }
 
@@ -331,7 +334,36 @@ header {
             header .subHdr ._rightArea .mainNav .menu li.LoginBtn{
               display: none;
             }
-            header .subHdr ._rightArea .mainNav .menu li:nth-child(4) {
+                                                
+            li.LoginDropdown {
+              display: inline-block;
+              transition: all 0.3s ease-in;
+            }
+            
+            .dropdown-content {
+              display: none;
+              position: absolute;
+              background-color: white;
+              min-width: 130px;
+              box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+              z-index: 1;
+              transition: all 0.3s ease-in;
+            }
+            
+           .dropdown-content a {
+              color: black;
+              padding: 12px 12px;
+              text-decoration: none;
+              display: block;
+              text-align: center;
+              transition: all 0.3s ease-in;
+            }
+                                
+            .LoginDropdown:hover .dropdown-content {
+              display: block;
+              transition: 0.5s ease-in;
+            }
+            header .subHdr ._rightArea .mainNav .menu li:nth-child(5) {
               margin-right: 0; }
             header .subHdr ._rightArea .mainNav .menu li a {
               display: flex;
@@ -420,7 +452,7 @@ header {
         font-family: 'Montserrat', sans-serif;
         font-size: 34px;
         line-height: 46px;
-        font-weight: 500;
+        font-weight: 700;
         margin-bottom: 35px; }
         .topSldrSec .topSldrCont ._cntntBox h1 span{
           font-weight: 800;
@@ -1106,7 +1138,6 @@ footer {
  footer .subFooter .footerLeft{
    display: contents;
  }
- .blogLeft{display: none;}
   footer .subFooter .footerNav img{
     max-height: 3.5em;
   }

@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, maximum-scale=1.0, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"/> -->
+    <meta content="width=device-width, initial-scale=0.47, user-scalable=1" name="viewport">
+
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Welcome to RASEET</title>
     
@@ -65,8 +67,15 @@
                             <li><a rel="relativeanchor" href="#howItWorks">How it works </a></li>
                             <li><a rel="relativeanchor" href="#FAQs">FAQs </a></li>
                             <li><a rel="relativeanchor" href="#contact">Contact Us</a></li>
-                            <li class="LoginBtn"><a href="#">Business &nbsp;<i class="fas fa-briefcase"></i></a></li> 
-                            <li class="LoginBtn"><a href="#">Customer &nbsp; <i class="fas fa-user"></i></a></li>
+                            <li class="LoginDropdown">
+                                <a rel="relativeanchor" href="javascript:void(0)" class="dropbtn">Log In</a>
+                                <div class="dropdown-content">
+                                  <a rel="relativeanchor" href="#">Business &nbsp;<i class="fas fa-briefcase"></i></a>
+                                  <a rel="relativeanchor" href="#">Customer &nbsp; <i class="fas fa-user"></i></a>                                  
+                                </div>
+                            </li>
+                            <li class="LoginBtn"><a href="#">Business Login&nbsp;<i class="fas fa-briefcase"></i></a></li> 
+                            <li class="LoginBtn"><a href="#">Customer Login&nbsp; <i class="fas fa-user"></i></a></li>
                         </ul>
                         <div class="langDropdown">
                             <div class="activeBar">
@@ -83,11 +92,11 @@
         </div>
     </header>
     <!-- header end -->
-    <ul class="loginNav d_f">
+    <!-- <ul class="loginNav d_f">
         <li class="business_item"><a href="#" class="business">Business <i class="fas fa-briefcase"></i></a></li> 
         <li class="customer_item"><a href="#" class="customer">Customer <i class="fas fa-user"></i></a></li>
         <li class="question"><a  class="queLink" onclick=btnNav();><img src="./images/login.svg" alt="" srcset=""></a></li>         
-    </ul>
+    </ul> -->
     <section class="topSldrSec" id="" style="background-color: #235F77;">
         <div class="container" >
             <div class="row">
@@ -440,12 +449,12 @@
                     <img src="./images/logo.png" alt="Logo">
                     <li><p>Save on useless bill printing and connect with your customer better.</p></li>
                 </ul>
-                <div class="blogLeft">
+            <!-- <div class="blogLeft">
                 <h6>Resources</h6>
                 <ul class="footerNav">
                     <li class="footerNavItem"><a href="#">Blog</a></li>                                      
                 </ul>
-            </div>
+            </div> -->
             </div>  
             
             <div class="footerLeft">           
@@ -469,7 +478,7 @@
                     <li class="footerNavItem"><a href="#">Partner</a></li>                    
                 </ul>
             </div>  
-            <div class=" col-lg-4 col-md-4 footerItem blogRight">
+            <div class=" col-lg-4 col-md-4 footerItem">
                 <h6>Resources</h6>
                 <ul class="footerNav">
                     <li class="footerNavItem"><a href="#">Blog</a></li>

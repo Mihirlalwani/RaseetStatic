@@ -263,6 +263,7 @@
   .goTop,.loginNav{
     display: none !important;
   }
+  
   header .subHdr ._leftArea .loginNav li a {
    
     padding-left: 0px; 
@@ -360,7 +361,12 @@
       text-transform: initial;
       letter-spacing: 0; }
       
-
+      header .subHdr ._rightArea .mainNav .menu li.LoginBtn{
+        display: flex;
+      }
+      li.LoginDropdown{
+        display: none;
+      }
   .topSldrSec {
     padding-top: 85px; }
     .topSldrSec .topSldrCont ._cntntBox, .topSldrSec .topSldrCont ._imgBox {
@@ -473,6 +479,12 @@
       .topSldrSec .topSldrCont ._cntntBox{
         padding-top: 0px;
       }
+      header .subHdr ._rightArea .mainNav .menu li.LoginBtn{
+        display: flex;
+      }
+      li.LoginDropdown{
+        display: none;
+      }
   .whySec .srvcBxCnt ._whyBoxCont {
     max-width: 45%; }
     .whySec .srvcBxCnt ._whyBoxCont {
@@ -535,9 +547,17 @@
         }
   }
   @media (max-width: 1023px) and (min-width: 320px) and (orientation: Landscape){
+    header .subHdr ._rightArea .mainNav .menu li.LoginBtn{
+      display: flex;
+    }
+    li.LoginDropdown{
+      display: none;
+    }
+   
     .topSldrSec .topSldrCont{
       display: block !important;
     }
+
     .topSldrSec .topSldrCont ._imgBox{
       min-height: 238px !important;
       float: left !important;
@@ -725,6 +745,7 @@
 
 /* Mobile view */
 @media (max-width: 767px) and (min-width: 320px) {
+  
   header .subHdr ._logoBox {
     min-width: auto; 
     margin-bottom: 0;}
@@ -757,6 +778,9 @@
      }
      header .subHdr ._rightArea .mainNav .menu li.LoginBtn{
       display: flex;
+    }
+    li.LoginDropdown{
+      display: none;
     }
   .topSldrSec {
     padding-top: 65px;
@@ -972,12 +996,12 @@
           margin-top: 10%;
         }
         footer .subFooter{
-          flex-direction:row-reverse;
+          flex-direction:column-reverse;
           /* display: block;           */
         }
         footer .subFooter .footerLeft{
           display: flex;
-          flex-direction: column;
+          /* flex-direction: column; */
         }
         footer .subFooter .footerItem{
           margin-top: 2rem;
@@ -1006,9 +1030,9 @@
         }
         
         footer .subFooter .footerNav p{
-          padding: 2rem 4rem;
+          padding: 1rem 4rem;
           font-size: 1.1rem;
-          /* text-align: center; */
+          text-align: center;
         }
 
       }
