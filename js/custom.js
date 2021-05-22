@@ -353,4 +353,17 @@ document.querySelector(".enter-down").addEventListener("click",function submitTo
 	const input=e.target.previousElementSibling;
 	input.style=""
   }
+  let flag=0;
+  function btnNav(){  
+	if(flag===0){
+	document.querySelector(".business_item").style.display="flex";
+	document.querySelector(".customer_item").style.display="flex";
+	document.querySelector(".queLink").innerHTML='<i class="fas fa-times cross"></i>';
+    flag=1;}else{
+		document.querySelector(".business_item").style.display="none";
+	    document.querySelector(".customer_item").style.display="none";
+		document.querySelector(".queLink").innerHTML='<img src="./images/login.svg" alt="" srcset="">';
+		flag=0;
+	}
+  };
   

@@ -201,6 +201,7 @@ section, footer, header {
   margin-left: 4px;
 }
 .goTop{
+  
   position: fixed;
   left: 2%;
   bottom: 5%;
@@ -214,6 +215,45 @@ section, footer, header {
   cursor: pointer;
   display: none;
 }
+.loginNav{
+  position: fixed;
+  z-index: 99;
+  right: 2%;
+  bottom: 5%;
+  /* display: flex; */
+  margin-left: 20px;
+}
+.loginNav >li {
+  padding: 0.5rem 0.4rem 0.5rem 0.4rem;
+  margin-right: 1rem;
+  background-color: #E76F51;
+  border-radius: 5000px;
+  /* border: 2px solid #225E77; */
+}
+
+.loginNav li a {
+  color: white;
+  font-size: 1.1rem;
+  /* border: 1px solid white; */
+  border-radius: 500px;
+  cursor: pointer;
+}
+.loginNav li a i{padding: 0.2rem 0.5rem 0.2rem 0.5rem;}
+.loginNav li a img{
+    margin: auto;
+    filter: brightness(0) invert(1);
+    max-height: 1.3rem;
+    margin:0.2rem 0.25rem ;
+    
+  }
+  
+     .loginNav .customer_item,.business_item {
+     margin-top: 0%;
+     width: 145px;
+     justify-content: center;
+     /* padding: 0.6rem 0.6rem 0.6rem 0.6rem; */
+     display: none;
+       }
 header {
   width: 100%;
   position: fixed;
@@ -239,31 +279,7 @@ header {
        height: 45px;
        padding-bottom: 0px;
         }
-        header .subHdr ._leftArea .menu-left{
-          display: flex;
-          margin-left: 20px;
-        }
-        header .subHdr ._leftArea .menu-left li{
-          margin-bottom: 10%;
-          margin-right:12% ;
-          margin-left: 12%;
-        }
-        header .subHdr ._leftArea .menu-left li a {
-          color: #225E77;
-          padding-left: 0px;
-          font-size: 14px; }
-          header .subHdr ._leftArea .menu-left li a img{
-            margin: auto;
-            margin-bottom: -8%;
-            
-          }
-          header .subHdr ._leftArea .menu-left .business_item {
-            font-weight:bolder;
-            text-decoration: underline;
-             }
-             header .subHdr ._leftArea .menu-left .customer_item {
-             margin-top: 3%;
-               }
+        
     header .subHdr ._rightArea {
       position: relative;
       flex-direction: column; }
@@ -312,7 +328,10 @@ header {
           header .subHdr ._rightArea .mainNav .menu li {
             position: relative;
             margin-right: 35px; }
-            header .subHdr ._rightArea .mainNav .menu li:last-child {
+            header .subHdr ._rightArea .mainNav .menu li.LoginBtn{
+              display: none;
+            }
+            header .subHdr ._rightArea .mainNav .menu li:nth-child(4) {
               margin-right: 0; }
             header .subHdr ._rightArea .mainNav .menu li a {
               display: flex;
@@ -401,7 +420,7 @@ header {
         font-family: 'Montserrat', sans-serif;
         font-size: 34px;
         line-height: 46px;
-        
+        font-weight: 500;
         margin-bottom: 35px; }
         .topSldrSec .topSldrCont ._cntntBox h1 span{
           font-weight: 800;
@@ -1082,6 +1101,7 @@ footer {
  }
  footer .subFooter{
    margin: 2rem auto 2rem ;
+   display: flex;
  }
  footer .subFooter hr{
    width: 10rem;
@@ -1093,7 +1113,10 @@ footer {
     padding-right: 4rem;
   }
   footer .subFooter .footerNav li{
-    margin-top: 0.8rem ;
+    margin-top: 0.4rem ;
+  }
+  footer .subFooter .footerNav li a{
+    font-size: 14px;
   }
   /* footer .subFooter .footerNav li a{
   

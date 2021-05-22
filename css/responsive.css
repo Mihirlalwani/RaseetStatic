@@ -218,7 +218,7 @@
 
 /* Laptop view */
 @media (min-width:1025px) and (max-width:1279px){
-  header .subHdr ._leftArea .menu-left li a{
+  header .subHdr ._leftArea .loginNav li a{
     padding-left: 0px;
     font-size: 15px;
   }
@@ -260,7 +260,10 @@
         
 /* Tablet Pro View */
 @media (max-width: 1024px) {
-  header .subHdr ._leftArea .menu-left li a {
+  .goTop,.loginNav{
+    display: none !important;
+  }
+  header .subHdr ._leftArea .loginNav li a {
    
     padding-left: 0px; 
     font-size: small;
@@ -730,15 +733,15 @@
     margin-bottom: 0;
     margin-left: 24px;
     margin-top: 7.5px;}
-    header .subHdr ._leftArea .menu-left li{
+    header .subHdr ._leftArea .loginNav li{
       margin-bottom: 0;
     }
-    header .subHdr ._leftArea .menu-left li a {
+    header .subHdr ._leftArea .loginNav li a {
       color: #225E77;
       padding-left: 0px; 
       font-size: 14px;
       margin-bottom: 0%;}
-      header .subHdr ._leftArea .menu-left{
+      header .subHdr ._leftArea .loginNav{
         margin-top: 5%;
       }
 
@@ -752,7 +755,9 @@
     margin-left: 16px;
     margin-right: 24px;
      }
-    
+     header .subHdr ._rightArea .mainNav .menu li.LoginBtn{
+      display: flex;
+    }
   .topSldrSec {
     padding-top: 65px;
     padding-bottom: 0; }
@@ -966,6 +971,27 @@
           width: 100%;
           margin-top: 10%;
         }
+        footer .subFooter{
+          flex-direction:column;
+          display: block;          
+        }
+        footer .subFooter .footerItem{
+          margin-top: 2rem;
+          padding: 0 2rem;
+          margin: 2rem auto 0 auto;         
+        }
+        footer .subFooter .footerItem h6{
+          font-size: 1.3rem;         
+        }
+        footer .subFooter .footerNav li a{
+          font-size: 1.1rem;
+          margin: auto;
+        }
+        footer .subFooter .footerNav p{
+          padding-right: 15rem;
+          font-size: 1.1rem;
+        }
+
       }
 
 

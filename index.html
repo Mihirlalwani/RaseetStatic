@@ -28,20 +28,18 @@
 <body id="body_top">
     <!-- header begin -->
     <a rel="relativeanchor" href="#body_top"><button  class="goTop"><i class="fas fa-chevron-up"></i></button></a>
-    
+   
     <header id="">
         <div class="container">
+            
             <div class="subHdr d_f">
                 <div class="_leftArea d_f">
                     <div class="_logoBox">
-                        <a rel="relativeanchor" href="#">
+                        <a rel="relativeanchor" href="#body_top">
                             <img src="images/logo.png" alt="">                          
                         </a>
                     </div>
-                    <!-- <ul class="menu-left d_f">
-                        <li class="business_item"><a rel="relativeanchor" href="#" class="business"><img src="images/business.svg" alt="">Business</a></li> 
-                        <li class="customer_item"><a rel="relativeanchor" href="#" class="customer"><img src="images/customer.svg" alt="">Customer</a></li>
-                    </ul> -->
+                    
                 </div>
                 <div class="_rightArea d_f">
                     <!-- <div class="top_strip d_f">
@@ -67,6 +65,8 @@
                             <li><a rel="relativeanchor" href="#howItWorks">How it works </a></li>
                             <li><a rel="relativeanchor" href="#FAQs">FAQs </a></li>
                             <li><a rel="relativeanchor" href="#contact">Contact Us</a></li>
+                            <li class="LoginBtn"><a href="#">Business &nbsp;<i class="fas fa-briefcase"></i></a></li> 
+                            <li class="LoginBtn"><a href="#">Customer &nbsp; <i class="fas fa-user"></i></a></li>
                         </ul>
                         <div class="langDropdown">
                             <div class="activeBar">
@@ -83,7 +83,11 @@
         </div>
     </header>
     <!-- header end -->
-
+    <ul class="loginNav d_f">
+        <li class="business_item"><a href="#" class="business">Business <i class="fas fa-briefcase"></i></a></li> 
+        <li class="customer_item"><a href="#" class="customer">Customer <i class="fas fa-user"></i></a></li>
+        <li class="question"><a  class="queLink" onclick=btnNav();><img src="./images/login.svg" alt="" srcset=""></a></li>         
+    </ul>
     <section class="topSldrSec" id="" style="background-color: #235F77;">
         <div class="container" >
             <div class="row">
@@ -96,7 +100,7 @@
                     <div class="col-lg-6 col-md-6">
                         <div class="_cntntBox d_f">
                             <h1>
-                                Save on useless <span> bill printing</span> and <span>connect with your customer better.</span>
+                                Save on useless <span> bill printing</span> and connect with your <span>customer better.</span>
                             </h1>
                             <div class="whtsappIntpCont">
                                 <!-- <h3>
@@ -431,14 +435,14 @@
 
     <footer>
          <div class="container subFooter d_f">
-            <div class="col-sm-12 col-lg-5 col-md-5">
+            <div class="col-sm-12 col-lg-5 col-md-5 footerItem">
                 <ul class="footerNav">
-                    <img src="/images/logo.png" alt="Logo">
+                    <img src="./images/logo.png" alt="Logo">
                     <li><p>Save on useless bill printing and connect with your customer better.</p></li>
                 </ul>
             </div>             
-            <div class="col-sm-12 col-lg-4 col-md-4">
-                <h6>Product</h6><hr>
+            <div class=" col-lg-4 col-md-4 footerItem">
+                <h6>Product</h6>
                 <ul class="footerNav">
                     <li class="footerNavItem"><a href="#">Why RASEET</a></li>
                     <li class="footerNavItem"><a href="#">How It Works</a></li>
@@ -446,18 +450,21 @@
                     <li class="footerNavItem"><a href="#">Contact Us</a></li>                    
                 </ul>
             </div> 
-            <div class="col-sm-12 col-lg-4 col-md-4">
-                <h6>Company</h6><hr>
+            <div class=" col-lg-4 col-md-4 footerItem">
+                <h6>Company</h6>
                 <ul class="footerNav">
                     <li class="footerNavItem"><a href="#">Privacy policy</a></li>
-                    <li class="footerNavItem"><a href="#">Terms & Conditions</a></li>                   
+                    <li class="footerNavItem"><a href="#">Terms & Conditions</a></li> 
+                    <li class="footerNavItem"><a href="#">Retailer</a></li>  
+                    <li class="footerNavItem"><a href="#">Customer</a></li>  
+                    <li class="footerNavItem"><a href="#">Partner</a></li>                    
                 </ul>
             </div>  
-            <div class="col-sm-12 col-lg-4 col-md-4">
-                <h6>Resources</h6><hr>
+            <div class=" col-lg-4 col-md-4 footerItem">
+                <h6>Resources</h6>
                 <ul class="footerNav">
                     <li class="footerNavItem"><a href="#">Blog</a></li>
-                    <li class="footerNavItem"><a href="#">Retailer</a></li>                    
+                                      
                 </ul>
             </div>
                  
