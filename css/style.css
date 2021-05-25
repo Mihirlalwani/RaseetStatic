@@ -1127,7 +1127,7 @@ header {
         color: white; }
 
 footer {
-  
+  box-shadow: inset 0 2px 0 #E76F51;
   padding: 12px 0 2px; 
   position: relative;
  }
@@ -1156,6 +1156,7 @@ footer {
 
          
   footer .copyright{
+    
     justify-content: center;
     background-color: #f0f0f0;
     display: flex;
@@ -1192,4 +1193,28 @@ footer {
   border-radius: 5%;
   z-index: 200;
 }
+
+
+
+
+
+/* Terms & condition Page Style */
+.termsSec{
+  margin-top: 0.2rem;
+  /* background-color: #fff; */
+  }
+.termsSec h6{
+  margin-top: 2.5rem;
+}  
+.termsSec p{
+  margin-top: 1rem;
+}
+.termsSec ul{
+  list-style-type: circle;
+  padding-left: 3rem;
+  margin-top: 1rem;
+}
+
+
+
 /*# sourceMappingURL=style.css.map */
